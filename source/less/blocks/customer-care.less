@@ -1,0 +1,53 @@
+.customer-care .content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../img/customer-care-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 461px;
+  text-align: left;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.customer-care__subtitle {
+  margin: 0;
+  font-family: @accent-font, @web-safe-font, @web-safe-default-font;
+  font-size: 22px;
+}
+
+.customer-care__text {
+  margin: 0;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .customer-care .content-wrapper {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .customer-care__title {
+    text-align: left;
+  }
+
+  .customer-care__subtitle {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .customer-care .content-wrapper {
+    max-width: @desktop-shift-width;
+    padding-left: 72px;
+    padding-right: 72px;
+    background-image: url("../img/customer-care-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 800px;
+  }
+
+  .customer-care__subtitle {
+    font-size: 35px;
+  }
+}

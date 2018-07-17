@@ -1,23 +1,510 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cakes</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>Наши торты</li>
-          <li>Индивидуальный заказ</li>
-          <li>Отзывы</li>
-          <li>О нас</li>
-          <li>Как заказать</li>
-          <li>Контакты</li>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cakes</title>
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="content-wrapper">
+      <h1 class="main-header__cite-title visually-hidden">Магазин тортов ручной работы</h1>
+      <a class="main-header__logo cite-logo">Cakes</a>
+      <button class="main-header__navigation-toggle-button main-header__navigation-toggle-button--closed">Меню</button>
+      <span class="main-header__contacts--closed">+7 906 899 92 96</span>
+      <nav class="main-header__navigation main-header__navigation--closed cite-navigation">
+        <h2 class="visually-hidden">Меню</h2>
+        <ul class="cite-navigation__list">
+          <li>
+            <a class="cite-navigation__item">Наши торты</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Индивидуальный заказ</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Отзывы</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">О нас</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Как заказать</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Контакты</a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+    </div>
+  </header>
+  <main>
+    <section class="cover">
+      <div class="content-wrapper">
+        <h2 class="cover__title">Торты на заказ</h2>
+        <div class="cover__subtitle">Ручная работа</div>
+        <ul class="cover__features">
+          <li class="cover__feature">
+            <div class="cover__feature-text">Натуральные ингредиенты</div>
+          </li>
+          <li class="cover__feature">
+            <div class="cover__feature-text">Доставка бесплатно при заказе от 2000 рублей*</div>
+          </li>
+        </ul>
+        <a class="cover__make-choice user-action-button">Выбрать торт</a>
+      </div>
+    </section>
+    <section class="cakes">
+      <div class="content-wrapper">
+        <h2 class="cakes__title section-title">Наши торты</h2>
+        <div class="cakes__list">
+          <div class="cakes__item">
+            <a class="cakes__link">
+              <div class="cakes__link-info">
+                <div class="cakes__link-title">Классические</div>
+                24 вида
+              </div>
+              <picture class="cakes__link-image">
+                <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                <img src="../img/classic-cakes-mobile.jpg" alt="Фото классического торта">
+              </picture>
+            </a>
+          </div>
+          <div class="cakes__items-group">
+            <div class="cakes__item">
+              <a class="cakes__link">
+                <div class="cakes__link-info">
+                  <div class="cakes__link-title">Муссовые</div>
+                  12 видов
+                </div>
+                <picture class="cakes__link-image">
+                  <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                  <img src="../img/muss-cakes-mobile.jpg" alt="Фото классического торта">
+                </picture>
+              </a>
+            </div>
+            <div class="cakes__item">
+              <a class="cakes__link">
+                <div class="cakes__link-info">
+                  <div class="cakes__link-title">Свадебные</div>
+                  20 видов
+                </div>
+                <picture class="cakes__link-image">
+                  <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                  <img src="../img/wedding-cakes-mobile.jpg" alt="Фото классического торта">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="cakes__items-group">
+            <div class="cakes__item">
+              <a class="cakes__link">
+                <div class="cakes__link-info">
+                  <div class="cakes__link-title">Мужчинам</div>
+                  12 видов
+                </div>
+                <picture class="cakes__link-image">
+                  <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                  <img src="../img/mens-cakes-mobile.jpg" alt="Фото классического торта">
+                </picture>
+              </a>
+            </div>
+            <div class="cakes__item">
+              <a class="cakes__link">
+                <div class="cakes__link-info">
+                  <div class="cakes__link-title">Женщинам</div>
+                  16 видов
+                </div>
+                <picture class="cakes__link-image">
+                  <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                  <img src="../img/womans-cakes-mobile.jpg" alt="Фото классического торта">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="cakes__item">
+            <a class="cakes__link">
+              <div class="cakes__link-info">
+                <div class="cakes__link-title">Детские</div>
+                18 видов
+              </div>
+              <picture class="cakes__link-image">
+                <source media="(min-width: 1290px)" srcset="../img/classic-cakes-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/classic-cakes-tablet.jpg">
+                <img src="../img/children-cakes-mobile.jpg" alt="Фото классического торта">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="content-wrapper">
+        <form class="order__three-step-form">
+          <h2 class="order__title section-title">Индивидуальный заказ</h2>
+          <div class="order__subtitle">Соберите торт в 3 шага</div>
+          <section class="order__step filling">
+            <h3 class="order__step-title filling__title">
+              <span class="filling__title-number">01</span> Выберите начинку</h3>
+            <div class="filling__item">
+              <div class="filling__preview">
+                <picture class="filling__img">
+                  <source media="(min-width: 1290px)" srcset="../img/filling-choko-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/filling-choko-tablet.jpg">
+                  <img src="../img/filling-choko-mobile.jpg" alt="Шоколадный ганаш">
+                </picture>
+                <span class="filling__count--img">1/12</span>
+              </div>
+              <div class="filling__choice-indicator">
+                <input type="radio" disabled name="filling-indicator" checked>
+                <input type="radio" disabled name="filling-indicator">
+                <input type="radio" disabled name="filling-indicator">
+                <input type="radio" disabled name="filling-indicator">
+                <input type="radio" disabled name="filling-indicator">
+              </div>
+              <div class="filling__info">
+                <span class="filling__item-title">Шоколадный ганаш</span>
+                <p class="filling__item-text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                <span class="filling__item-price">1000 руб/кг</span>
+              </div>
+              <button class="filling__submit-choice user-action-button">Выбрать</button>
+              <span class="filling__count--block">1/12</span>
+            </div>
+            <button class="filling__prev">prev</button>
+            <button class="filling__next">next</button>
+            </fieldset>
+          </section>
+          <section class="order__step size">
+            <h3 class="order__step-title size__title">
+              <span class="size__title-number">02</span> Размер</h3>
+            <ul class="size__list">
+              <li class="size__item">
+                <a class="size__preview">
+                  <span>1 кг</span>
+                  <img src="http://placehold.it/109x109">
+                </a>
+                <div class="size__choice-indicator">
+                  <input type="radio" disabled name="size-indicator" checked>
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                </div>
+                <div class="size__text">17-18 см(1 кг – 6 персон)</div>
+                <button class="size__choose user-action-button">Выбрать</button>
+              </li>
+              <li class="size__item">
+                <a class="size__preview">
+                  <span>2 кг</span>
+                  <img src="http://placehold.it/108sx107">
+                </a>
+                <div class="size__choice-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator" checked>
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                </div>
+                <div class="size__text">23-24 см(10–12 персон)</div>
+                <button class="size__choose user-action-button">Выбрать</button>
+              </li>
+              <li class="size__item">
+                <a class="size__preview">
+                  <span>5 кг</span>
+                  <img src="http://placehold.it/120x121">
+                </a>
+                <div class="size__choice-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator" checked>
+                  <input type="radio" disabled name="size-indicator">
+                </div>
+                <div class="size__text">Два яруса 25 и 20 см(15–20 персон)</div>
+                <button class="size__choose user-action-button">Выбрать</button>
+              </li>
+              <li class="size__item">
+                <a class="size__preview">
+                  <span>8 кг</span>
+                  <img src="http://placehold.it/139x141">
+                </a>
+                <div class="size__choice-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator">
+                  <input type="radio" disabled name="size-indicator" checked>
+                </div>
+                <div class="size__text">Три яруса 30,25 и 18 см(25–30 персон)</div>
+                <button class="size__choose user-action-button">Выбрать</button>
+              </li>
+            </ul>
+          </section>
+          <div class="order__step decoration-order-wrapper">
+            <section class="decoration">
+              <h3 class="order__step-title decoration__title">
+                <span class="order__title-number">03</span> Оформление</h3>
+              <div class="decoration__item">
+                <div class="decoration__preview">
+                  <img src="http://placehold.it/169x196">
+                  <span class="decoration__count--img">1/35</span>
+                </div>
+                <div class="decoration__choice-indicator">
+                  <input type="radio" disabled name="decoration-indicator" checked>
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                </div>
+                <span class="decoration__type">Ягодное ассорти</span>
+                <span class="decoration__price">700 руб/кг</span>
+                <button class="decoration__choose user-action-button">Выбрать</button>
+              </div>
+              <div class="decoration__item">
+                <div class="decoration__preview">
+                  <img src="http://placehold.it/169x196">
+                  <span class="decoration__count--img">1/35</span>
+                </div>
+                <div class="decoration__choice-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator" checked>
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                  <input type="radio" disabled name="decoration-indicator">
+                </div>
+                <span class="decoration__type">Маршмэллоу</span>
+                <span class="decoration__price">600 руб/кг</span>
+                <button class="decoration__choose user-action-button">Выбрать</button>
+              </div>
+              <span class="decoration__count--block">2/35</span>
+              <button class="decoration__prev">prev</button>
+              <button class="decoration__next">next</button>
+            </section>
+            <section class="order__submit-wrapper">
+              <h3 class="order__step-title order__submit-title">Ваш выбор</h3>
+              <label for="filling">Начинка</label>
+              <input type="text" name="filling" placeholder="Шоколадный ганаш">
+              <label for="size">Размер</label>
+              <input type="text" name="size" placeholder="1 кг">
+              <label for="decoration">Оформление</label>
+              <input type="text" name="decoration" placeholder="Маршмэллоу">
+              <button class="order__submit-button user-action-button" type="submit">Заказать торт</button>
+            </section>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="content-wrapper">
+        <h2 class="feedback__title section-title">Отзывы</h2>
+        <div class="feedback__wrapper">
+          <div class="feedback__item">
+            <img class="feedback__author-photo" src="http://placehold.it/59x59">
+            <cite>
+              <span class="feedback__author-name">Мария</span>
+              <span class="feedback__author-info">юрист, 33 года</span>
+            </cite>
+            <blockquote>Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
+              будем заказывать торты только у вас для наших семейных праздников:)
+              <a class="feedback__show-more">Развернуть</a>
+            </blockquote>
+            <div class="feedback__show-indicator">
+              <input type="radio" disabled name="feedback-indicator" checked>
+              <input type="radio" disabled name="feedback-indicator">
+              <input type="radio" disabled name="feedback-indicator">
+              <input type="radio" disabled name="feedback-indicator">
+              <input type="radio" disabled name="feedback-indicator">
+            </div>
+          </div>
+          <span class="feedback__count">1/26</span>
+          <button class="feedback__prev">prev</button>
+          <button class="feedback__next">next</button>
+        </div>
+      </div>
+    </section>
+    <section class="shop-info">
+      <div class="content-wrapper">
+        <h2 class="shop-info__title section-title">О нас</h2>
+        <div class="shop-info__confectioner confectioner">
+          <img class="confectioner__photo" src="http://placehold.it/156x156">
+          <ul class="confectioner__social">
+            <li>
+              <a>instagram</a>
+            </li>
+            <li>
+              <a>vk</a>
+            </li>
+            <li>
+              <a>facebook</a>
+            </li>
+          </ul>
+          <div class="confectioner__info">
+            <span class="confectioner__info-title">О кондитере</span>
+            <div class="confectioner__fact">
+              <span class="confectioner__fact-title">
+                Кондитер как призвание
+              </span>
+              <p class="confectioner__fact-text">
+                Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.
+                С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер. </p>
+            </div>
+            <div class="confectioner__fact">
+              <span class="confectioner__fact-title">
+                Принцип - натуральные ингредиенты
+              </span>
+              <p class="confectioner__fact-text">
+                Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным
+                принципом является выбор натуральных ингредиентов.
+              </p>
+            </div>
+          </div>
+          <div class="confectioner__quote">
+            <blockquote class="confectioner__quote-text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное
+              блюдо.
+            </blockquote>
+            <img class="confectioner__quote-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="content-wrapper">
+        <h2 class="advantages__title section-title">Наши преимущества</h2>
+        <div class="advantages__subtitle">Почему нас выбирают?</div>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <span class="advantages__item-title">
+                Без искусственных добавок
+              </span>
+              <p class="advantages__item-text">
+                Работаем с натуральными ингредиентами и свежими продуктами
+              </p>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-title">
+                Свежий торт в день торжества
+              </span>
+              <p class="advantages__item-text">
+                Торты изготавливаются в течение суток до отправки
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="customer-care">
+      <div class="content-wrapper">
+        <h2 class="customer-care__title section-title">Забота о клиентах</h2>
+        <div class="customer-care__subtitle">Для нас важно</div>
+        <p class="customer-care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи,чтобы он был создан исключительно для вас
+          и для вашего события.
+        </p>
+      </div>
+    </section>
+    <section class="how-to-order">
+      <div class="content-wrapper">
+        <h2 class="how-to-order__title section-title">Как заказать</h2>
+        <ul class="how-to-order__features">
+          <li class="feature">
+            <div class="feature__number">1</div>
+            <div class="feature__body">
+              <span class="feature__title">Срок заказа</span>
+              <p class="feature__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature__number">2</div>
+            <div class="feature__body">
+              <span class="feature__title">Доставка по городу</span>
+              <p class="feature__text">Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка бесплатно.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature__number">3</div>
+            <div class="feature__body">
+              <span class="feature__title">Доставка за городом</span>
+              <p class="feature__text">Доставка за пределами города рассчитывается индивидуально.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="content-wrapper">
+        <h2 class="contacts__title section-title">Контакты</h2>
+        <div class="contacts__info">
+          <span class="contacts__subtitle">Остались вопросы?</span>
+          <p class="contacts__form-label">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <form class="contacts__feedback-form">
+            <input class="contacts__feedback-form-elem" type="text" placeholder="Ваше имя">
+            <input class="contacts__feedback-form-elem" type="email" placeholder="Email адрес">
+            <textarea class="contacts__feedback-form-elem" placeholder="Ваш вопрос"></textarea>
+            <input class="contacts__feedback-form-elem user-action-button" type="submit" title="Отправить">
+          </form>
+        </div>
+        <div class="contacts__alt">
+          <ul class="contacts__alt-list">
+            <li class="contacts__phone">Или позвоните по телефону:
+              <span>+7 906 899 92 96</span>
+            </li>
+            <li class="contacts__mail">Наша почта:
+              <a>bakerybypavel@mail.ru</a>
+            </li>
+            <li class="contacts__social">Мы в соц. сетях:
+              <a>instagram</a>
+              <a>vk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="content-wrapper">
+      <a class="main-footer__logo cite-logo">Cakes</a>
+      <nav class="main-footer__navigation cite-navigation">
+        <h2 class="visually-hidden">Меню</h2>
+        <ul class="cite-navigation__list">
+          <li>
+            <a class="cite-navigation__item">Наши торты</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Индивидуальный заказ</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Отзывы</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">О нас</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Как заказать</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">Контакты</a>
+          </li>
+          <li>
+            <a class="cite-navigation__item">+7 906 899 92 96</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="main-footer__social-list">
+        <li>
+          <a class="main-footer__social-instagram">instagram</a>
+        </li>
+        <li>
+          <a class="main-footer__social-vk">vk</a>
+        </li>
+      </ul>
+      <div class="main-footer__cite-info">
+        <span>&copy;2018 Cakes</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

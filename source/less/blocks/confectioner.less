@@ -1,0 +1,81 @@
+.confectioner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.confectioner__info-title {
+  margin: 0;
+  font-family: @accent-font, @web-safe-font, @web-safe-default-font;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.confectioner__fact-title {
+  font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.confectioner__quote-text {
+  font-family: @secondary-font-bold-italic, @web-safe-font, @web-safe-default-font;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.confectioner__social {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.confectioner__photo {
+  display: block;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .confectioner__info-title {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .confectioner__photo {
+    margin-left: auto;
+    order: 2;
+  }
+
+  .confectioner__social {
+    order: 1;
+  }
+
+  .confectioner__info {
+    order: 0;
+  }
+
+  .confectioner__quote {
+    order: 3;
+  }
+
+  .confectioner__fact-title {
+    font-size: 16px;
+  }
+
+  .confectioner__quote-text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .confectioner__info-title {
+    font-size: 35px;
+  }
+
+  .confectioner__fact-title {
+    font-size: 20px;
+  }
+
+  .confectioner__quote-text {
+    font-size: 25px;
+  }
+}

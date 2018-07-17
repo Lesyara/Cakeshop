@@ -1,0 +1,62 @@
+.decoration__price {
+  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.decoration__count {
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 18px;
+  line-height: 1.2;
+  color: @note-font-color;
+
+  &--img {
+    font-size: 12px;
+  }
+
+  &--block {
+    display: none;
+  }
+}
+
+.decoration__item {
+  display: none;
+}
+
+.decoration__item:first-of-type {
+  display: block;
+}
+
+.decoration__prev,
+.decoration__next {
+  display: none;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .decoration__choice-indicator {
+    display: none;
+  }
+
+  .decoration__count {
+    font-size: 12px;
+
+    &--block {
+      display: inline;
+    }
+
+    &--img {
+      display: none;
+    }
+  }
+
+  .decoration__prev,
+  .decoration__next {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .decoration__count {
+    font-size: 18px;
+  }
+}

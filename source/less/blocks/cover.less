@@ -1,0 +1,110 @@
+.cover {
+  font-size: 14px;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  line-height: 1.2;
+}
+
+.cover .content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../img/cover-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -207px;
+  background-size: 368px auto;
+}
+
+.cover__title {
+  max-width: 195px;
+  margin: 0 auto;
+  padding-top: 126px;
+  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.cover__subtitle {
+  margin: 15px 0 21px;
+  font-family: @accent-font, @web-safe-font, @web-safe-default-font;
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.cover__features {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cover__feature-text {
+  max-width: 210px;
+  margin-left: 43px;
+  margin-bottom: 28px;
+}
+
+.cover__feature:last-of-type .cover__feature-text {
+  margin-bottom: 40px;
+}
+
+.cover__make-choice {
+  margin-left: 26px;
+  margin-right: 26px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .cover .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding-left: 47px;
+    padding-right: 47px;
+    background-image: url("../img/cover-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 632px auto;
+  }
+
+  .cover__title {
+    font-size: 60px;
+  }
+
+  .cover__subtitle {
+    font-size: 36px;
+  }
+
+  .cover__features {
+    order: 1;
+  }
+
+  .cover__features li {
+    display: inline;
+  }
+
+  .cover__feature-text {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .cover .content-wrapper {
+    max-width: @desktop-shift-width;
+    padding-left: 72px;
+    padding-right: 72px;
+    background-image: url("../img/cover-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 1300px auto;
+  }
+
+  .cover__title {
+    font-size: 78px;
+  }
+
+  .cover__subtitle {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,31 @@
+.features {
+  font-size: 14px;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  line-height: 1.2;
+}
+
+.feature__title {
+  font-size: 15px;
+  font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
+  line-height: 1.2;
+}
+
+.feature__number {
+  font-size: 35px;
+  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  line-height: 1.2;
+}
+
+@media (min-width: @desktop-shift-width) {
+  .feature__title {
+    font-size: 21px;
+  }
+
+  .features {
+    font-size: 20px;
+  }
+
+  .feature__number {
+    font-size: 64px;
+  }
+}

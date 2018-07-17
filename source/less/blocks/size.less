@@ -1,0 +1,35 @@
+.size__text {
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 14px;
+  color: @note-font-color;
+  line-height: 1.2;
+}
+
+.size__list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.size__item {
+  display: none;
+}
+
+.size__item:first-of-type {
+  display: block;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .size__item {
+    display: inline-block;
+  }
+
+  .size__choice-indicator {
+    display: none;
+  }
+
+  .size__choose {
+    display: none;
+  }
+}
+

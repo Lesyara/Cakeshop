@@ -1,0 +1,46 @@
+.how-to-order {
+  background: @offer-block-normal-color;
+  //background-image: linear-gradient(to bottom, @offer-block-normal-color, @offer-block-normal-color 80%, @offer-block-dark-color);
+}
+
+.how-to-order .content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: @secondary-font-color;
+  background-image: url("../img/how-to-order-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 236px auto, cover;
+}
+
+.how-to-order__features {
+  padding-left: 0;
+  padding-bottom: 145px;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .how-to-order .content-wrapper {
+    padding-left: 47px;
+    padding-right: 47px;
+    background-image: url("../img/how-to-order-tablet.jpg"); //linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
+    background-position: bottom left;
+    background-size: contain;
+  }
+
+  .how-to-order__features {
+    padding-left: 324px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .how-to-order .content-wrapper {
+    max-width: @desktop-shift-width;
+    padding-left: 72px;
+    padding-right: 72px;
+    background-image: url("../img/how-to-order-desktop.png");//linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
+    background-size: 838px auto, cover;
+  }
+}

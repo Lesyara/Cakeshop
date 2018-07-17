@@ -1,0 +1,123 @@
+.main-header {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.main-header .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-header__cite-title {
+  margin: 0;
+  font-size: 0;
+}
+
+.main-header__navigation {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 100%;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.main-header__navigation--closed {
+  display: none;
+}
+
+.main-header__navigation-toggle-button {
+  width: 18px;
+  height: 14px;
+  border: 0;
+  font-size: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+
+.main-header__navigation-toggle-button--closed {
+  background-image: url("../img/icon-menu-open.svg");
+  background-size: 20px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-header .cite-navigation__item {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: @menu-popup-color;
+}
+
+.main-header .cite-navigation__list:last-of-type(.cite-navigation__item) {
+  border-bottom: none;
+}
+
+.main-header__contacts--closed {
+  display: none;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .main-header .content-wrapper {
+    justify-content: start;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .main-header__logo {
+    padding-right: 25px;
+  }
+
+  .main-header__contacts--opened {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .main-header__navigation {
+    width: 320px;
+    top: 30px;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .main-header {
+    background-color: transparent;
+  }
+
+  .main-header .content-wrapper {
+    max-width: @desktop-shift-width;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .main-header__navigation--opened {
+    display: block;
+    position: static;
+  }
+
+  .main-header .cite-navigation__list li {
+    display: inline;
+  }
+
+  .main-header .cite-navigation__item {
+    display: inline;
+    border: none;
+    background-color: transparent;
+  }
+
+  .main-header__contacts--opened {
+    order: 1;
+  }
+}

@@ -1,0 +1,79 @@
+.feedback .content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.feedback__author-photo {
+  display: block;
+}
+
+.feedback__author-name {
+  font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.feedback__show-more {
+  font-family: @web-safe-font, @web-safe-default-font;
+  font-style: italic;
+  color: @secondary-accent-color;
+  text-decoration: underline;
+}
+
+.feedback__count {
+  font-size: 12px;
+  color: @accent-color;
+}
+
+.feedback__prev, // сделать after-элементами
+.feedback__next {
+  display: none;
+}
+
+@media (min-width: @tablet-shift-width) {
+  .feedback .content-wrapper {
+    padding-left: 91px;
+    padding-right: 91px;
+    background-image: url("../img/feedback-decor-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    font-size: 14px;
+  }
+
+  .feedback__author-name {
+    font-size: 16px;
+  }
+
+  .feedback__show-indicator {
+    display: none;
+  }
+
+  .feedback__prev, // сделать after-элементами
+  .feedback__next {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-shift-width) {
+  .feedback .content-wrapper {
+    max-width: @desktop-shift-width;
+    padding-left: 258px;
+    padding-right: 258px;
+    font-size: 18px;
+    background-image: url("../img/feedback-decor-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .feedback__author-name {
+    font-size: 27px;
+  }
+
+  .feedback__count {
+    font-size: 18px;
+  }
+}
