@@ -6,14 +6,39 @@
   line-height: 1.2;
 }
 
+.feedback__item {
+  position: relative;
+}
+
+.feedback__title {
+  margin-top: 41px;
+  margin-bottom: 19px;
+}
+
 .feedback__author-photo {
   display: block;
+  margin: 0 auto 6px;
+  width: 58px;
+  border-radius: 50%;
 }
 
 .feedback__author-name {
+  font-style: normal;
+  text-align: center;
   font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
   line-height: 1.2;
+}
+
+.feedback__author-info {
+  font-style: normal;
+  text-align: center;
+}
+
+.feedback__text {
+  text-align: center;
+  margin: 7px auto 6px;
+  max-width: 240px;
 }
 
 .feedback__show-more {
@@ -23,7 +48,14 @@
   text-decoration: underline;
 }
 
+.feedback__show-indicator {
+  text-align: center;
+}
+
 .feedback__count {
+  position: absolute;
+  right: 1px;
+  bottom: 25px;
   font-size: 12px;
   color: @accent-color;
 }

@@ -1,8 +1,5 @@
-.size__text {
-  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
-  font-size: 14px;
-  color: @note-font-color;
-  line-height: 1.2;
+.size {
+  padding: 4px 19px 26px;
 }
 
 .size__list {
@@ -19,6 +16,39 @@
   display: block;
 }
 
+.size__preview {
+  position: relative;
+  display: block;
+  max-width: 109px;
+  margin: 46px auto 38px;
+}
+
+.size__choice-indicator {
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.size__value {
+  position: absolute;
+  top: 50px;
+  left: 41px;
+}
+
+.size__text {
+  margin-bottom: 57px;
+  text-align: center;
+  font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
+  font-size: 14px;
+  color: @note-font-color;
+  line-height: 1.2;
+}
+
+.size__choose {
+  padding: 17px 60px 15px;
+  font-size: 13px;
+}
+
 @media (min-width: @tablet-shift-width) {
   .size__item {
     display: inline-block;
@@ -32,4 +62,3 @@
     display: none;
   }
 }
-

@@ -1,9 +1,3 @@
-.decoration__price {
-  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
-  font-size: 18px;
-  line-height: 1.2;
-}
-
 .decoration__count {
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 18px;
@@ -11,6 +5,9 @@
   color: @note-font-color;
 
   &--img {
+    position: absolute;
+    bottom: 3px;
+    right: 6px;
     font-size: 12px;
   }
 
@@ -20,16 +17,48 @@
 }
 
 .decoration__item {
+  margin-top: 24px;
   display: none;
 }
 
-.decoration__item:first-of-type {
+.decoration__item:last-of-type {
   display: block;
+}
+
+.decoration__preview {
+  position: relative;
+  max-width: 169px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.decoration__choice-indicator {
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.decoration__type {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.decoration__price {
+  margin-bottom: 29px;
+  text-align: center;
+  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .decoration__prev,
 .decoration__next {
   display: none;
+}
+
+.decoration__choose {
+  padding: 17px 60px 15px;
+  font-size: 13px;
 }
 
 @media (min-width: @tablet-shift-width) {

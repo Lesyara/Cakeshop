@@ -4,6 +4,49 @@
   flex-wrap: wrap;
 }
 
+.confectioner__photo {
+  display: block;
+  width: 155px;
+  height: 154px;
+}
+
+.confectioner__social {
+  padding-left: 36px;
+  margin: 0;
+  list-style: none;
+}
+
+.confectioner__social-item {
+  width: 35px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: @section-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 31px;
+  margin-bottom: 16px;
+}
+
+.confectioner__social-inst {
+  background-image: url("../img/icon-instagram.png");
+  background-size: 18px;
+}
+
+.confectioner__social-vk {
+  background-image: url("../img/icon-vk.png");
+  background-size: 23px 13px;
+}
+
+.confectioner__social-twitter {
+  background-image: url("../img/icon-twitter.png");
+  background-size: 19px 16px;
+}
+
+.confectioner__info {
+  margin-top: 13px;
+  margin-bottom: 38px;
+}
+
 .confectioner__info-title {
   margin: 0;
   font-family: @accent-font, @web-safe-font, @web-safe-default-font;
@@ -12,26 +55,35 @@
 }
 
 .confectioner__fact-title {
+  margin-top: 6px;
+  margin-bottom: 9px;
   font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
   line-height: 1.2;
 }
 
+.confectioner__fact-text {
+  margin: 0;
+}
+
+.confectioner__fact-text:first-of-type {
+  margin-bottom: 35px;
+}
+
+.confectioner__quote {
+  padding-bottom: 52px;
+  background-image: url("../img/author-sign-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 64px 31px;
+}
+
 .confectioner__quote-text {
+  margin: 0;
   font-family: @secondary-font-bold-italic, @web-safe-font, @web-safe-default-font;
   font-size: 13px;
   line-height: 1.2;
   text-align: center;
-}
-
-.confectioner__social {
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.confectioner__photo {
-  display: block;
 }
 
 @media (min-width: @tablet-shift-width) {

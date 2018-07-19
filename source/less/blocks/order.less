@@ -5,7 +5,7 @@
 
 .order__title {
   max-width: 220px;
-  margin: 0 auto;
+  margin: 46px auto 0;
 }
 
 .order__subtitle {
@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+section.order__step {
+  margin-bottom: 10px;
+}
+
 .order__step {
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
@@ -24,20 +28,60 @@
 }
 
 .order__step-title {
+  margin: 0;
   font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
   font-size: 16px;
   line-height: 1.2;
   color: @accent-color;
 }
 
+.order__step-number {
+  font-size: 30px;
+  padding-right: 8px;
+}
+
+.order__submit-wrapper {
+  padding: 4px 19px 26px;
+}
+
 .order__submit-title {
+  margin-top: 39px;
+  margin-bottom: 11px;
   font-size: 22px;
   color: @main-font-color;
 }
 
-.order__three-step-form input[type="text"],
+.order__submit-label:first-of-type {
+  margin-top: 0;
+}
+
+.order__submit-label {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 17px;
+  text-align: center;
+  font-size: 20px;
+  font-family: @accent-font;
+  color: @accent-color;
+}
+
+.order__submit-input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid @border-color;
+  border-radius: 25px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
 .order__submit-button {
   display: block;
+  padding: 17px 60px 15px;
+  margin-top: 29px;
+  margin-bottom: 10px;
+  font-size: 13px;
 }
 
 @media (min-width: @tablet-shift-width) {
@@ -53,7 +97,7 @@
     font-size: 18px;
   }
 
-  .order__three-step-form input[type="text"],
+  .order__submit-label,
   .order__submit-button {
     display: inline-block;
   }
