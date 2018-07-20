@@ -6,20 +6,79 @@
   line-height: 1.2;
 }
 
+.contacts__title {
+  margin-top: 37px;
+  margin-bottom: 8px;
+}
+
 .contacts__subtitle {
+  margin-bottom: 5px;
   font-family: @accent-font, @web-safe-font, @web-safe-default-font;
   font-size: 22px;
   line-height: 1.2;
 }
 
+.contacts__form-label {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .contacts__feedback-form-elem {
   display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 8px;
+  padding-bottom: 17px;
+  margin-bottom: 10px;
+}
+
+.contacts__feedback-form-quest .contacts__feedback-form-elem {
+  min-height: 120px;
+  margin-bottom: 19px;
+}
+
+.contacts__feedback-form-submit {
+  display: block;
+  padding: 19px 51px 14px;
 }
 
 .contacts__alt-list {
   padding-left: 0;
-  margin: 0;
+  margin: 28px 0 48px;
   list-style: none;
+}
+
+.contacts__alt-list li {
+  margin-bottom: 18px;
+}
+
+.contacts__mail-text {
+  display: inline-block;
+}
+
+.contacts__social-text {
+  margin-bottom: 10px;
+}
+
+.contacts__social-item {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: @section-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__social-inst {
+  margin-right: 30px;
+  background-size: 32px;
+  background-image: url("../img/instagram-icon.svg");
+}
+
+.contacts__social-vk {
+  background-size: 42px auto;
+  background-image: url("../img/vk-icon.svg");
 }
 
 @media (min-width: @tablet-shift-width) {

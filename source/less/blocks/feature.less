@@ -4,15 +4,39 @@
   line-height: 1.2;
 }
 
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature:last-of-type {
+  margin-bottom: 0;
+}
+
+.feature__body {
+  display: inline-block;
+  max-width: 220px;
+}
+
 .feature__title {
+  padding-bottom: 4px;
   font-size: 15px;
   font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
   line-height: 1.2;
 }
 
 .feature__number {
+  display: inline-block;
+  max-width: 28px;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: 19px;
   font-size: 35px;
   font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  line-height: 0.3;
+}
+
+.feature__text {
+  margin: 0;
   line-height: 1.2;
 }
 
