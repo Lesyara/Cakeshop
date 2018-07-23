@@ -1,5 +1,5 @@
 .filling {
-  padding: 4px 19px 26px;
+  padding: 30px 45px 16px;
 }
 
 .filling__title {
@@ -74,6 +74,10 @@
 }
 
 @media (min-width: @tablet-shift-width) {
+  .filling {
+    display: flex;
+  }
+
   .filling__count {
     font-size: 18px;
 
@@ -86,12 +90,37 @@
     }
   }
 
+  .filling__title {
+    max-width: 165px;
+  }
+
+  .filling__info {
+    flex-basis: 200px;
+    width: 286px;
+  }
+
   .filling__prev,
   .filling__next {
     display: block;
+    position: absolute;
   }
 
   .filling__choice-indicator {
     display: none;
+  }
+
+  .filling__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 658px;
+    //min-width: 780px;
+    //min-height: 416px;
+    margin-left: auto;
+  }
+
+  .filling__preview {
+    margin: 0;
+    flex-basis: 343px;
   }
 }
