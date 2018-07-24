@@ -19,8 +19,9 @@
 .size__preview {
   position: relative;
   display: block;
-  max-width: 109px;
+  max-width: 200px;
   margin: 46px auto 38px;
+  text-align: center;
 }
 
 .size__choice-indicator {
@@ -31,8 +32,8 @@
 
 .size__value {
   position: absolute;
-  top: 50px;
-  left: 41px;
+  top: 43%;
+  left: 45%;
 }
 
 .size__text {
@@ -50,8 +51,27 @@
 }
 
 @media (min-width: @tablet-shift-width) {
+  .size {
+    padding: 30px 45px 16px;
+  }
+
+  .size__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .size__item {
     display: inline-block;
+  }
+
+  .size__item:first-of-type {
+    display: inline-block;
+  }
+
+  .size__img {
+    position: absolute;
   }
 
   .size__choice-indicator {
