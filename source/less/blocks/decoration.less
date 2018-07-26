@@ -1,3 +1,29 @@
+.decoration__choice-wrapper {
+  display: block;
+}
+
+.decoration__choice-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.decoration__item {
+  margin-top: 24px;
+  display: none;
+
+  &--marshmallow {
+    display: block;
+  }
+}
+
+.decoration__preview {
+  position: relative;
+  max-width: 169px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
 .decoration__count {
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 18px;
@@ -14,22 +40,6 @@
   &--block {
     display: none;
   }
-}
-
-.decoration__item {
-  margin-top: 24px;
-  display: none;
-}
-
-.decoration__item:last-of-type {
-  display: block;
-}
-
-.decoration__preview {
-  position: relative;
-  max-width: 169px;
-  margin: 0 auto;
-  font-size: 0;
 }
 
 .decoration__choice-indicator {
@@ -62,25 +72,89 @@
 }
 
 @media (min-width: @tablet-shift-width) {
+  .decoration {
+    position: relative;
+  }
+
+  .decoration__choice-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 520px;
+    margin-left: auto;
+  }
+
+  .decoration__choice-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 424px;
+    margin: -75px auto 0;
+  }
+
+  .decoration__item {
+    display: inline-block;
+
+    &--marshmallow {
+      display: inline-block;
+    }
+  }
+
+  .decoration__item:hover,
+  .decoration__item:active {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  .decoration__preview {
+    max-width: 195px;
+  }
+
+  .decoration__choose {
+    display: none;
+  }
+
   .decoration__choice-indicator {
     display: none;
   }
 
   .decoration__count {
-    font-size: 12px;
-
     &--block {
       display: inline;
+      position: absolute;
+      font-size: 12px;
+      bottom: 0;
+      right: 0;
     }
 
     &--img {
+      font-size: 12px;
       display: none;
     }
   }
 
-  .decoration__prev,
+  .decoration__prev {
+    display: block;
+    top: -27px;
+    left: -11px;
+  }
+
   .decoration__next {
     display: block;
+    top: -27px;
+    left: 19px;
+  }
+
+  .decoration__type {
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: -58px;
+  }
+
+  .decoration__price {
+    position: relative;
+    margin-bottom: 16px;
   }
 }
 

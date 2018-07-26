@@ -10,16 +10,24 @@
 
 .size__item {
   display: none;
-}
 
-.size__item:first-of-type {
-  display: block;
+  &--small {
+    display: block;
+  }
+
+  &--small .size__preview {
+    width: 109px;
+    height: 109px;
+    background-image: url("../img/circle3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .size__preview {
   position: relative;
   display: block;
-  max-width: 200px;
+  max-width: 140px;
   margin: 46px auto 38px;
   text-align: center;
 }
@@ -37,7 +45,7 @@
 }
 
 .size__text {
-  margin-bottom: 57px;
+  margin-bottom: 43px;
   text-align: center;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
@@ -52,26 +60,58 @@
 
 @media (min-width: @tablet-shift-width) {
   .size {
-    padding: 30px 45px 16px;
+    padding: 30px 45px 33px;
   }
 
   .size__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .size__item {
-    display: inline-block;
-  }
+    display: block;
 
-  .size__item:first-of-type {
-    display: inline-block;
-  }
+    &--small {
+      display: block;
+    }
 
-  .size__img {
-    position: absolute;
+    &--small .size__preview {
+      width: 109px;
+      height: 109px;
+      margin: -24px auto 0;
+      background-image: url("../img/circle3.svg");
+      background-size: 77px 77px;
+      background-repeat: no-repeat;
+    }
+
+    &--medium .size__preview {
+      width: 132px;
+      height: 132px;
+      margin: -24px auto 0;
+      background-image: url("../img/circle3.svg"), url("../img/circle3.svg");
+      background-size: 107px 107px;
+      background-repeat: no-repeat;
+    }
+
+    &--big .size__preview {
+      width: 152px;
+      height: 152px;
+      margin: -24px auto 0;
+      background-image: url("../img/circle3.svg"), url("../img/circle3.svg");
+      background-size: 120px 120px, 84px 84px;
+      background-repeat: no-repeat;
+    }
+
+    &--huge .size__preview {
+      width: 171px;
+      height: 171px;
+      margin: -24px auto 0;
+      background-image: url("../img/circle3.svg"), url("../img/circle3.svg"), url("../img/circle3.svg");
+      background-size: 67px, 98px, 140px;
+      background-repeat: no-repeat;
+    }
   }
 
   .size__choice-indicator {
@@ -80,5 +120,9 @@
 
   .size__choose {
     display: none;
+  }
+
+  .size__text {
+    margin-top: 0; //margin-bottom: 57px;
   }
 }

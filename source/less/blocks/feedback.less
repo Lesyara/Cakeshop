@@ -76,17 +76,55 @@
     font-size: 14px;
   }
 
+  .feedback__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    flex-wrap: wrap;
+    margin-right: 157px;
+  }
+
   .feedback__author-name {
     font-size: 16px;
+    text-align: left;
+  }
+
+  .feedback__author-info {
+    text-align: left;
+  }
+
+  .feedback__author-photo {
+    margin: 25px;
+    width: 107px;
+  }
+
+  .feedback__text {
+    text-align: left;
+    margin: 12px auto 6px;
+    max-width: 280px;
   }
 
   .feedback__show-indicator {
     display: none;
   }
 
-  .feedback__prev, // сделать after-элементами
+  .feedback__prev,
   .feedback__next {
     display: inline-block;
+  }
+
+  .feedback__count {
+    position: absolute;
+    right: -144px;
+    bottom: -21px;
   }
 }
 

@@ -53,7 +53,7 @@
             <div class="cover__feature-text">Доставка бесплатно при заказе от 2000 рублей*</div>
           </li>
         </ul>
-        <a class="cover__make-choice user-action-button">Выбрать торт</a>
+        <a class="cover__make-choice user-action__button">Выбрать торт</a>
       </div>
     </section>
     <section class="cakes">
@@ -174,7 +174,7 @@
                 <p class="filling__item-text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
                 <div class="filling__item-price">1000 руб/кг</div>
               </div>
-              <button class="filling__submit-choice user-action-button">Выбрать</button>
+              <button class="filling__submit-choice user-action__button">Выбрать</button>
               <span class="filling__count--block">1/12</span>
             </div>
             <button class="filling__prev">prev</button>
@@ -184,10 +184,9 @@
             <h3 class="order__step-title size__title">
               <div class="order__step-number">02</div> Размер</h3>
             <ul class="size__list">
-              <li class="size__item">
+              <li class="size__item size__item--small">
                 <a class="size__preview">
                   <span class="size__value">1 кг</span>
-                  <img class="size__img" src="../img/circle.svg" alt="1 кг" width="109px" height="109px">
                 </a>
                 <div class="size__choice-indicator">
                   <input type="radio" disabled name="size-indicator" checked>
@@ -198,12 +197,11 @@
                 <div class="size__text">17-18 см
                   <div class="size__text-brackets">(1 кг – 6 персон)</div>
                 </div>
-                <button class="size__choose user-action-button">Выбрать</button>
+                <button class="size__choose user-action__button">Выбрать</button>
               </li>
-              <li class="size__item">
+              <li class="size__item size__item--medium">
                 <a class="size__preview">
                   <span class="size__value">2 кг</span>
-                  <img class="size__img" src="../img/circle.svg" alt="2 кг" width="154px" height="154px">
                 </a>
                 <div class="size__choice-indicator">
                   <input type="radio" disabled name="size-indicator">
@@ -214,13 +212,11 @@
                 <div class="size__text">23-24 см
                   <div class="size__text-brackets">(10–12 персон)</div>
                 </div>
-                <button class="size__choose user-action-button">Выбрать</button>
+                <button class="size__choose user-action__button">Выбрать</button>
               </li>
-              <li class="size__item">
+              <li class="size__item size__item--big">
                 <a class="size__preview">
                   <span class="size__value">5 кг</span>
-                  <img class="size__img" src="../img/circle.svg" alt="2 ярус 25 см" width="174px" height="174px">
-                  <img class="size__img" src="../img/circle.svg" alt="1 ярус 20 см" width="120px" height="120px">
                 </a>
                 <div class="size__choice-indicator">
                   <input type="radio" disabled name="size-indicator">
@@ -231,14 +227,11 @@
                 <div class="size__text">Два яруса 25 и 20 см
                   <div class="size__text-brackets">(15–20 персон)</div>
                 </div>
-                <button class="size__choose user-action-button">Выбрать</button>
+                <button class="size__choose user-action__button">Выбрать</button>
               </li>
-              <li class="size__item">
+              <li class="size__item size__item--huge">
                 <a class="size__preview">
                   <span class="size__value">8 кг</span>
-                  <img class="size__img" src="../img/circle.svg" alt="3 ярус 30 см" width="200px" height="200px">
-                  <img class="size__img" src="../img/circle.svg" alt="2 ярус 25 см" width="140px" height="140px">
-                  <img class="size__img" src="../img/circle.svg" alt="1 ярус 18 см" width="96px" height="96px">
                 </a>
                 <div class="size__choice-indicator">
                   <input type="radio" disabled name="size-indicator">
@@ -249,70 +242,90 @@
                 <div class="size__text">Три яруса 30,25 и 18 см
                   <div class="size__text-brackets">(25–30 персон)</div>
                 </div>
-                <button class="size__choose user-action-button">Выбрать</button>
+                <button class="size__choose user-action__button">Выбрать</button>
               </li>
             </ul>
           </section>
-          <div class="order__step order__submit-wrapper">
+          <div class="order__step order__final-wrapper">
             <section class="decoration">
               <h3 class="order__step-title decoration__title">
-                <div class="order__step-number">03</div>Оформление</h3>
-              <div class="decoration__item">
-                <div class="decoration__preview">
-                  <picture class="decoration__img">
-                    <source media="(min-width: 1290px)" srcset="../img/berries-desktop.jpg">
-                    <source media="(min-width: 768px)" srcset="../img/berries-tablet.jpg">
-                    <img src="../img/berries-tablet.jpg" alt="Ягодное ассорти">
-                  </picture>
-                  <span class="decoration__count--img">1/35</span>
-                </div>
-                <div class="decoration__choice-indicator">
-                  <input type="radio" disabled name="decoration-indicator" checked>
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                </div>
-                <div class="decoration__type">Ягодное ассорти</div>
-                <div class="decoration__price">700 руб/кг</div>
-                <button class="decoration__choose user-action-button">Выбрать</button>
-              </div>
-              <div class="decoration__item">
-                <div class="decoration__preview">
-                  <picture class="decoration__img">
-                    <source media="(min-width: 1290px)" srcset="../img/marshmallow-desktop.jpg">
-                    <source media="(min-width: 768px)" srcset="../img/marshmallow-tablet.jpg">
-                    <img src="../img/marshmallow-mobile.jpg" alt="Маршмэллоу">
-                  </picture>
-                  <span class="decoration__count--img">1/35</span>
-                </div>
-                <div class="decoration__choice-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator" checked>
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                  <input type="radio" disabled name="decoration-indicator">
-                </div>
-                <div class="decoration__type">Маршмэллоу</div>
-                <div class="decoration__price">600 руб/кг</div>
-                <button class="decoration__choose user-action-button">Выбрать</button>
+                <div class="order__step-number">03</div>Оформление
+              </h3>
+              <div class="decoration__choice-wrapper">
+                <a class="decoration__prev user-action__prev-link">
+                  <span>Назад</span>
+                </a>
+                <ul class="decoration__choice-list">
+                  <li class="decoration__item decoration__item--berries">
+                    <div class="decoration__preview">
+                      <picture class="decoration__img">
+                        <source media="(min-width: 1290px)" srcset="../img/berries-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="../img/berries-tablet.jpg">
+                        <img src="../img/berries-tablet.jpg" alt="Ягодное ассорти">
+                      </picture>
+                      <span class="decoration__count--img">1/35</span>
+                    </div>
+                    <div class="decoration__choice-indicator">
+                      <input type="radio" disabled name="decoration-indicator" checked>
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                    </div>
+                    <div class="decoration__type">Ягодное ассорти</div>
+                    <div class="decoration__price">700 руб/кг</div>
+                    <button class="decoration__choose user-action__button">Выбрать</button>
+                  </li>
+                  <li class="decoration__item decoration__item--marshmallow">
+                    <div class="decoration__preview">
+                      <picture class="decoration__img">
+                        <source media="(min-width: 1290px)" srcset="../img/marshmallow-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="../img/marshmallow-tablet.jpg">
+                        <img src="../img/marshmallow-mobile.jpg" alt="Маршмэллоу">
+                      </picture>
+                      <span class="decoration__count--img">1/35</span>
+                    </div>
+                    <div class="decoration__choice-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator" checked>
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                      <input type="radio" disabled name="decoration-indicator">
+                    </div>
+                    <div class="decoration__type">Маршмэллоу</div>
+                    <div class="decoration__price">600 руб/кг</div>
+                    <button class="decoration__choose user-action__button">Выбрать</button>
+                  </li>
+                </ul>
+                <a class="decoration__next user-action__next-link">
+                  <span>Вперед</span>
+                </a>
               </div>
               <span class="decoration__count--block">2/35</span>
-              <button class="decoration__prev">prev</button>
-              <button class="decoration__next">next</button>
             </section>
             <section class="order__submit">
               <h3 class="order__step-title order__submit-title">Ваш выбор</h3>
-              <label class="order__submit-label">Начинка
-                <input class="order__submit-input" type="text" name="filling" placeholder="Шоколадный ганаш">
-              </label>
-              <label class="order__submit-label">Размер
-                <input class="order__submit-input" type="text" name="size" placeholder="1 кг">
-              </label>
-              <label class="order__submit-label">Оформление
-                <input class="order__submit-input" type="text" name="decoration" placeholder="Маршмэллоу">
-              </label>
-              <button class="order__submit-button user-action-button" type="submit">Заказать торт</button>
+              <div class="order__submit-wrapper">
+                <label class="order__submit-item order__submit-item--filling">
+                  <span class="order__submit-label">Начинка</span>
+                  <div class="order__submit-input-wrapper">
+                    <input class="order__submit-input" type="text" name="filling" placeholder="Шоколадный ганаш">
+                  </div>
+                </label>
+                <label class="order__submit-item order__submit-item--size">
+                  <span class="order__submit-label">Размер</span>
+                  <div class="order__submit-input-wrapper">
+                    <input class="order__submit-input" type="text" name="size" placeholder="1 кг">
+                  </div>
+                </label>
+                <label class="order__submit-item order__submit-item--decor">
+                  <span class="order__submit-label">Оформление</span>
+                  <div class="order__submit-input-wrapper">
+                    <input class="order__submit-input" type="text" name="decoration" placeholder="Маршмэллоу">
+                  </div>
+                </label>
+                <button class="order__submit-button user-action__button" type="submit">Заказать торт</button>
+              </div>
             </section>
           </div>
         </form>
@@ -322,6 +335,9 @@
       <div class="content-wrapper">
         <h2 class="feedback__title section-title">Отзывы</h2>
         <div class="feedback__wrapper">
+          <a class="feedback__prev user-action__prev-link">
+            <span>Предыдущий</span>
+          </a>
           <div class="feedback__item">
             <picture>
               <source media="(min-width: 1290px)" srcset="../img/feedback-photo-desktop.png">
@@ -345,8 +361,9 @@
             </div>
             <span class="feedback__count">1/26</span>
           </div>
-          <button class="feedback__prev">prev</button>
-          <button class="feedback__next">next</button>
+          <a class="feedback__next user-action__next-link">
+            <span>Следующий</span>
+          </a>
         </div>
       </div>
     </section>
@@ -483,7 +500,7 @@
               <label class="visually-hidden" for="feedback-quest-input">Ваш вопрос</label>
               <textarea class="contacts__feedback-form-elem" rows="3" placeholder="Ваш вопрос" id="feedback-quest-input"></textarea>
             </div>
-            <input class="contacts__feedback-form-submit user-action-button" type="submit" title="Отправить">
+            <input class="contacts__feedback-form-submit user-action__button" type="submit" title="Отправить">
           </form>
         </div>
         <div class="contacts__alt">
