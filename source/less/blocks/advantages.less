@@ -48,18 +48,44 @@
 
 
 @media (min-width: @tablet-shift-width) {
-  .advantages .content-wrapper {
+  .advantages > .content-wrapper {
     padding-left: 47px;
     padding-right: 47px;
+    min-height: 380px;
     background-image: url("../img/advantages-back-tablet.png");
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 333px;
+    background-position: -5% -7%;
+    background-size: 333px 380px;
   }
 
   .advantages__wrapper {
-    margin-left: 50%;
+    margin-top: -264px;
     background-color: transparent;
+  }
+
+  .advantages__wrapper .content-wrapper {
+    max-width: 370px;
+    margin-left: 50%;
+  }
+
+  .advantages__title {
+    margin-top: 67px;
+    margin-bottom: 6px;
+  }
+
+  .advantages__subtitle {
+    font-size: 26px;
+  }
+
+  .advantages__item-title {
+    padding-top: 13px;
+    text-align: left;
+  }
+
+  .advantages__item-text {
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.4;
   }
 }
 
