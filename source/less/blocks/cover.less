@@ -2,15 +2,15 @@
   font-size: 14px;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   line-height: 1.2;
+  background-image: url("../img/cover-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -207px;
+  background-size: 368px auto;
 }
 
 .cover .content-wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url("../img/cover-back-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center -207px;
-  background-size: 368px auto;
 }
 
 .cover__title {
@@ -54,6 +54,13 @@
 }
 
 @media (min-width: @tablet-shift-width) {
+  .cover {
+    background-image: url("../img/cover-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 200% 13px;
+    background-size: 632px auto;
+  }
+
   .cover .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -61,10 +68,6 @@
     justify-content: start;
     padding-left: 47px;
     padding-right: 47px;
-    background-image: url("../img/cover-back-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 200% 13px;
-    background-size: 632px auto;
   }
 
   .cover__title {
@@ -93,7 +96,7 @@
   .cover__feature-text {
     display: inline-block;
     vertical-align: top;
-    max-width: 219px;
+    max-width: 220px;
     padding-top: 21px;
     padding-left: 67px;
   }
@@ -108,21 +111,35 @@
 }
 
 @media (min-width: @desktop-shift-width) {
-  .cover .content-wrapper {
-    max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+  .cover {
     background-image: url("../img/cover-back-desktop.png");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position-x: right;
+    background-position-y: -170px;
     background-size: 1300px auto;
   }
 
+  .cover .content-wrapper {
+    max-width: @desktop-shift-width;
+    min-height: 945px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
   .cover__title {
+    max-width: 390px;
     font-size: 78px;
+    padding-top: 137px;
+    margin: 0;
+    line-height: 0.9;
   }
 
   .cover__subtitle {
+    margin: 23px 0 26px;
     font-size: 40px;
+  }
+
+  .cover__features {
+    margin-top: 124px;
   }
 }

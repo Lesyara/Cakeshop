@@ -22,7 +22,6 @@
 }
 
 .cakes__item {
-  //width: 280px;
   margin: 0 auto;
   height: 120px;
   background-color: @section-color;
@@ -53,7 +52,7 @@
 @media (min-width: @tablet-shift-width) {
   .cakes__title {
     text-align: start;
-    margin-top: 94px;
+    margin-top: 110px;
     margin-bottom: 36px;
   }
 
@@ -62,48 +61,95 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 796px;
+  }
+
+  .cakes__list div[class^="cakes__item"] {
+    margin-bottom: 0;
   }
 
   .cakes__item {
     flex-basis: 420px;
     height: auto;
-  }
+    margin: 0;
 
-  .cakes__item:last-of-type {
-    order: 1;
+    &--classic {
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+
+    &--for-children {
+      order: 1;
+      flex-grow: 1;
+      margin-left: 20px;
+    }
   }
 
   .cakes__items-group {
     display: flex;
     flex-direction: column;
-  }
-
-  .cakes__list div[class^="cakes__item"] {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 12px;
+    justify-content: space-between;
   }
 
   .cakes__items-group .cakes__item {
     flex-basis: 184px;
     width: 288px;
+    margin: 0;
+  }
+
+  .cakes__link-info {
+    top: 22px;
+    left: 26px;
   }
 }
 
 @media (min-width: @desktop-shift-width) {
   .cakes .content-wrapper {
     max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .cakes__title {
+    margin-top: -60px;
+    margin-bottom: 62px;
+  }
+
+  .cakes__list {
+    min-height: 1348px;
   }
 
   .cakes__item {
     flex-basis: 695px;
     height: 652px;
+
+    &--classic {
+      margin-right: 42px;
+    }
+
+    &--for-children {
+      margin-left: 42px;
+    }
+  }
+
+  .cakes__items-group {
+    min-height: 652px;
   }
 
   .cakes__items-group .cakes__item {
     flex-basis: 305px;
     width: 484px;
+    margin-bottom: 0;
+  }
+
+  .cakes__link-info {
+    font-size: 20px;
+    top: 36px;
+    left: 46px;
+  }
+
+  .cakes__link-title {
+    font-size: 24px;
   }
 }

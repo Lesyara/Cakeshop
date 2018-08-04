@@ -16,15 +16,15 @@
   text-align: center;
 }
 
-section.order__step {
-  margin-bottom: 10px;
-}
-
 .order__step {
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
   line-height: 1.2;
   background-color: @section-color;
+}
+
+section.order__step {
+  margin-bottom: 10px;
 }
 
 .order__step-title {
@@ -93,21 +93,9 @@ section.order__step {
 }
 
 @media (min-width: @tablet-shift-width) {
-  section.order__step {
-    margin-bottom: 20px;
-  }
-
-  .order__step {
-    max-height: 348px;
-  }
-
-  div.order__step {
-    min-height: 470px;
-  }
-
   .order__title {
     max-width: 470px;
-    margin: 44px auto 0;
+    margin: 56px auto 0;
   }
 
   .order__subtitle {
@@ -115,16 +103,29 @@ section.order__step {
     margin: 9px 0 28px;
   }
 
+  .order__step {
+    max-height: 348px;
+  }
+
+  section.order__step {
+    margin-bottom: 20px;
+  }
+
+  div.order__step {
+    min-height: 470px;
+  }
+
   .order__step-title {
     font-size: 18px;
+    margin-right: -77px;
   }
 
   .order__final-wrapper {
     padding: 30px 45px 16px;
     background-image: url("../img/illustr-tablet.png");
     background-repeat: no-repeat;
-    background-size: 119px 157px;
-    background-position: 4% 39%;
+    background-size: 96px 146px;
+    background-position: 3% 39%;
   }
 
   .order__submit-title {
@@ -179,20 +180,55 @@ section.order__step {
 @media (min-width: @desktop-shift-width) {
   .order .content-wrapper {
     max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .order__title {
+    margin: 98px auto 0;
   }
 
   .order__subtitle {
+    margin: 9px 0 49px;
     font-size: 35px;
   }
 
   .order__step {
+    min-height: 570px;
     font-size: 18px;
   }
 
+  section.order__step {
+    margin-bottom: 34px;
+  }
+
+  div.order__step {
+    min-height: 752px;
+  }
+
   .order__step-title {
+    //margin-right: 0;
     font-size: 27px;
+  }
+
+  .order__final-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 45px 82px 70px;
+    background-image: url("../img/illustr-desktop.png");
+    background-size: 203px 310px;
+    background-position: 5% 48%;
+  }
+
+  .order__step-number {
+    font-size: 58px;
+    letter-spacing: 3px;
+  }
+
+  .order__submit {
+    flex-basis: 100%;
   }
 
   .order__submit-title {
