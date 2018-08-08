@@ -1,4 +1,4 @@
-.advantages .content-wrapper {
+.advantages > .content-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
@@ -32,7 +32,7 @@
 }
 
 .advantages__item-title {
-  max-width: 260px;
+  //max-width: 260px;
   margin: 0 auto;
   padding-top: 84px;
   text-align: center;
@@ -41,21 +41,24 @@
 }
 
 .advantages__item-text {
-  max-width: 260px;
+  //max-width: 260px;
   margin: 0 auto;
   text-align: center;
 }
 
-
 @media (min-width: @tablet-shift-width) {
-  .advantages > .content-wrapper {
-    padding-left: 47px;
-    padding-right: 47px;
-    min-height: 380px;
+  .advantages {
+    min-height: 398px;
     background-image: url("../img/advantages-back-tablet.png");
     background-repeat: no-repeat;
     background-position: -5% -7%;
     background-size: 333px 380px;
+  }
+
+  .advantages > .content-wrapper {
+    padding-left: 47px;
+    padding-right: 47px;
+    min-height: 380px;
   }
 
   .advantages__wrapper {
@@ -64,8 +67,8 @@
   }
 
   .advantages__wrapper .content-wrapper {
-    max-width: 370px;
-    margin-left: 50%;
+    max-width: 356px;
+    margin-left: 46%;
   }
 
   .advantages__title {
@@ -77,32 +80,49 @@
     font-size: 26px;
   }
 
+  .advantages__list {
+    padding-bottom: 0;
+  }
+
+  .advantages__item {
+    padding-left: 88px;
+  }
+
   .advantages__item-title {
-    padding-top: 13px;
+    padding-top: 10px;
     text-align: left;
   }
 
   .advantages__item-text {
     margin: 0 auto;
-    text-align: left;
     line-height: 1.4;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-shift-width) {
+  .advantages {
+    min-height: 710px;
+    background-image: url("../img/advantages-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 650px;
+  }
+
   .advantages > .content-wrapper {
     font-size: 20px;
     padding-left: 34px;
     padding-right: 34px;
     max-width: @desktop-shift-width;
-    background-image: url("../img/advantages-back-desktop.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 650px;
   }
 
   .advantages__wrapper {
     margin-top: -153px;
+  }
+
+  .advantages__wrapper .content-wrapper {
+    max-width: 490px;
+    margin-left: 44%;
   }
 
   .advantages__title {
@@ -114,12 +134,13 @@
     font-size: 35px;
   }
 
-  .advantages__item-text {
+  .advantages__item {
+    padding-left: 100px;
+    padding-bottom: 20px;
     font-size: 20px;
   }
 
   .advantages__item-title {
     font-size: 20px;
-    font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
   }
 }

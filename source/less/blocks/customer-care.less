@@ -12,8 +12,8 @@
 }
 
 .customer-care__title {
-  margin-top: 35px;
-  margin-bottom: 6px;
+  padding-top: 35px;
+  padding-bottom: 6px;
   text-align: left;
 }
 
@@ -31,8 +31,7 @@
 @media (min-width: @tablet-shift-width) {
   .customer-care .content-wrapper {
     min-height: 431px;
-    margin-top: -181px;
-    margin-left: 0;
+    margin-top: -119px;
     padding-left: 47px;
     padding-right: 47px;
     background-image: url("../img/customer-care-back-tablet.png");
@@ -45,9 +44,8 @@
   }
 
   .customer-care__title {
-    margin-top: 190px;
-    margin-bottom: 3px;
-    padding-top: 180px;
+    padding-top: 181px;
+    padding-bottom: 6px;
     text-align: left;
   }
 
@@ -65,15 +63,30 @@
 @media (min-width: @desktop-shift-width) {
   .customer-care .content-wrapper {
     max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+    min-height: 745px;
+    margin-top: -182px;
+    padding-left: 34px;
+    padding-right: 34px;
     background-image: url("../img/customer-care-back-desktop.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 800px;
   }
 
+  .customer-care__wrapper {
+    max-width: 445px;
+  }
+
+  .customer-care__title {
+    padding-top: 307px;
+    padding-bottom: 20px;
+  }
+
   .customer-care__subtitle {
     font-size: 35px;
+  }
+
+  .customer-care__text {
+    font-size: 20px;
   }
 }

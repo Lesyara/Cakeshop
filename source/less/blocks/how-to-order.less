@@ -4,8 +4,7 @@
 }
 
 .how-to-order .content-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 275px;
   color: @secondary-font-color;
   background-image: url("../img/how-to-order-back-mobile.png");
   background-repeat: no-repeat;
@@ -27,32 +26,38 @@
 
 @media (min-width: @tablet-shift-width) {
   .how-to-order .content-wrapper {
-    padding-left: 47px;
-    padding-right: 47px;
+    max-width: 520px;
+    padding-left: 200px;
     background-image: url("../img/how-to-order-tablet.jpg"); //linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
     background-position: bottom left;
     background-size: contain;
   }
 
   .how-to-order__title {
-    padding-left: 280px;
     display: inline-block;
     padding-top: 46px;
     padding-bottom: 34px;
   }
 
   .how-to-order__features {
-    padding-left: 264px;
     padding-bottom: 64px;
   }
 }
 
 @media (min-width: @desktop-shift-width) {
   .how-to-order .content-wrapper {
-    max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+    max-width: 1140px;
+    padding-left: 700px;
     background-image: url("../img/how-to-order-desktop.png");//linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
     background-size: 838px auto, cover;
+  }
+
+  .how-to-order__title {
+    padding-top: 118px;
+  }
+
+  .how-to-order__features {
+    padding-bottom: 175px;
+    font-size: 20px;
   }
 }

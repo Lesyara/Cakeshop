@@ -1,11 +1,16 @@
+.main-footer {
+  background-color: @footer-color;
+  color: @secondary-font-color;
+}
+
 .main-footer .content-wrapper {
-  min-height: 415px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   padding-left: 20px;
   padding-right: 20px;
-  color: @secondary-font-color;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
-  background-color: @footer-color;
   line-height: 1.2;
 }
 
@@ -38,7 +43,6 @@
 }
 
 .main-footer__social-list {
-  //margin: 29px 0 28px;
   padding-left: 0;
   list-style: none;
 }
@@ -72,20 +76,18 @@
 
 @media (min-width: @tablet-shift-width) {
   .main-footer .content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
     min-height: 140px;
+    align-items: center;
+    padding-bottom: 20px;
   }
 
   .main-footer__navigation-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
-    flex-basis: 715px;
+    width: 715px;
   }
 
   .main-footer .cite-navigation {
@@ -106,7 +108,7 @@
 
   .main-footer__cite-info {
     display: flex;
-    flex-basis: 600px;
+    width: 635px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -138,12 +140,15 @@
 }
 
 @media (min-width: @desktop-shift-width) {
+  .main-footer {
+    background-color: @desktop-footer-color;
+    color: @main-font-color;
+  }
+
   .main-footer .content-wrapper {
     max-width: @desktop-shift-width;
     padding-left: 72px;
     padding-right: 72px;
-    color: @main-font-color;
-    background-color: @desktop-footer-color;
   }
 
   .main-footer .cite-navigation {

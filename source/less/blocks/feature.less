@@ -40,6 +40,17 @@
   line-height: 1.2;
 }
 
+@media (min-width: @tablet-shift-width) {
+  .feature__body {
+    max-width: 260px;
+  }
+
+  .feature__number {
+    margin-right: 20px;
+    margin-left: 7px;
+  }
+}
+
 @media (min-width: @desktop-shift-width) {
   .feature__title {
     font-size: 21px;
@@ -50,6 +61,13 @@
   }
 
   .feature__number {
+    margin-right: 21px;
+    margin-left: 5px;
     font-size: 64px;
   }
+
+  .feature__body {
+    max-width: 370px;
+  }
 }
+
