@@ -27,7 +27,7 @@
 .main-header__navigation {
   position: absolute;
   left: 0;
-  top: 24px;
+  top: 40px;
   width: 100%;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 12px;
@@ -59,6 +59,7 @@
 
 .main-header .cite-navigation__item {
   display: block;
+  padding: 14px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
   text-align: center;
@@ -92,8 +93,8 @@
   }
 
   .main-header__navigation {
-    width: 320px;
-    top: 30px;
+    max-width: 320px;
+    top: 59px;
   }
 }
 
@@ -107,16 +108,17 @@
   }
 
   .main-header .content-wrapper {
-    max-width: @desktop-shift-width;
+    max-width: @desktop-max-width;
     min-height: 96px;
     align-items: flex-end;
-    padding-right: 34px;
-    padding-left: 34px;
+    padding-right: 72px;
+    padding-left: 72px;
   }
 
   .main-header__navigation {
     position: static;
     display: block;
+    max-width: 800px;
     margin-left: 30px;
   }
 
@@ -134,11 +136,13 @@
 
   .main-header .cite-navigation__list li {
     display: inline;
+    padding-right: 20px;
   }
 
   .main-header .cite-navigation__item {
     display: inline;
     border: none;
+    padding: 0;
     background-color: transparent;
   }
 

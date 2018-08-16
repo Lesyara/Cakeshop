@@ -87,15 +87,25 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
-    width: 715px;
+    width: 728px;
   }
 
   .main-footer .cite-navigation {
-    flex-basis: 610px;
+    flex-basis: 615px;
     font-size: 12px;
   }
 
+  .main-footer .cite-navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 590px;
+  }
+
   .main-footer .cite-navigation__list li {
+    padding-right: 20px;
     margin-bottom: 33px;
   }
 
@@ -117,20 +127,20 @@
   }
 
   .main-footer__social-list {
-    order: 1;
+    order: 2;
     margin: 0;
   }
 
   .main-footer__social-item {
-    padding-right: 16px;
+    padding-right: 7px;
   }
 
   .main-footer__copyright {
     flex-basis: 100px;
     border: none;
-    padding-top: 18px;
+    padding-top: 20px;
     padding-bottom: 14px;
-    padding-right: 35px;
+    padding-right: 30px;
   }
 
   .main-footer__copyright-text {
@@ -146,21 +156,50 @@
   }
 
   .main-footer .content-wrapper {
-    max-width: @desktop-shift-width;
-    padding-left: 72px;
-    padding-right: 72px;
+    max-width: @desktop-max-width;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .main-footer__navigation-wrapper {
+    width: 1220px;
+    justify-content: flex-start;
   }
 
   .main-footer .cite-navigation {
     font-size: 16px;
   }
 
+  .main-footer .cite-navigation__list {
+    width: 750px;
+  }
+
+  .main-footer .cite-navigation__list li {
+    margin-bottom: 25px;
+  }
+
+  .main-footer__cite-info {
+    width: 1220px;
+    border-top: none;
+    justify-content: flex-end;
+  }
+
   .main-footer__logo {
+    margin-right: 160px;
+    padding-top: 32px;
+    font-size: 28px;
     color: @main-font-color;
   }
 
+  .main-footer__social-list {
+    margin-top: -70px;
+  }
+
   .main-footer__copyright {
-    width: 100%;
+    flex-basis: 100%;
+    order: 2;
+    margin-top: 20px;
+    border-top: 1px solid @sub-dark-font-color;
     font-size: 12px;
     text-align: center;
     color: @sub-dark-font-color;

@@ -89,11 +89,11 @@
   .filling__item {
     position: relative;
     display: flex;
-    flex-basis: 432px;
+    flex-basis: 510px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
+    align-content: flex-start;
     margin: 0 auto;
   }
 
@@ -101,13 +101,18 @@
     font-size: 18px;
   }
 
+  .filling__item-text {
+    margin: 4px 0 10px;
+  }
+
   .filling__item-price {
+    font-size: 20px;
     text-align: left;
   }
 
   .filling__preview {
     flex-basis: 210px;
-    margin: 0 0 15px;
+    margin: 0 25px 15px 0;
   }
 
   .filling__info {
@@ -132,8 +137,8 @@
     &--block {
       position: absolute;
       display: inline;
-      bottom: 35px;
-      right: -53px;
+      bottom: 37px;
+      right: 24px;
       font-size: 12px;
       color: @note-font-color;
     }

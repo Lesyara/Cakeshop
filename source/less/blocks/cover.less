@@ -2,15 +2,15 @@
   font-size: 14px;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   line-height: 1.2;
-  background-image: url("../img/cover-back-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center -207px;
-  background-size: 368px auto;
 }
 
 .cover .content-wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  background-image: url("../img/cover-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -207px;
+  background-size: 368px auto;
 }
 
 .cover__title {
@@ -54,20 +54,19 @@
 }
 
 @media (min-width: @tablet-shift-width) {
-  .cover {
-    background-image: url("../img/cover-back-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 200% 13px;
-    background-size: 632px auto;
-  }
-
   .cover .content-wrapper {
     display: flex;
+    max-width: 925px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
     padding-left: 47px;
     padding-right: 47px;
+    background-image: url("../img/cover-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position-x: 272px;
+    background-position-y: 15px;
+    background-size: 632px auto;
   }
 
   .cover__title {
@@ -111,19 +110,14 @@
 }
 
 @media (min-width: @desktop-shift-width) {
-  .cover {
-    background-image: url("../img/cover-back-desktop.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: -170px;
-    background-size: 1300px auto;
-  }
-
   .cover .content-wrapper {
-    max-width: @desktop-shift-width;
+    max-width: @desktop-max-width;
     min-height: 945px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 72px;
+    padding-right: 72px;
+    background: @right-border-gradient,
+      url("../img/cover-back-desktop.png") 228px -170px no-repeat content-box;
+    background-size: 1300px auto;
   }
 
   .cover__title {

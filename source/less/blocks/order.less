@@ -71,15 +71,14 @@ section.order__step {
 }
 
 .order__submit-input {
-  height: 30px;
+  height: 33px;
+  margin-bottom: 13px;
   width: 100%;
   display: block;
   font-size: 14px;
   text-align: center;
   border: 1px solid @border-color;
   border-radius: 25px;
-  padding-top: 4px;
-  padding-bottom: 6px;
   background-color: transparent;
   text-transform: none;
 }
@@ -87,8 +86,8 @@ section.order__step {
 .order__submit-button {
   display: block;
   padding: 17px 60px 15px;
-  margin-top: 29px;
-  margin-bottom: 10px;
+  margin-top: 28px;
+  margin-bottom: 8px;
   font-size: 13px;
 }
 
@@ -117,7 +116,6 @@ section.order__step {
 
   .order__step-title {
     font-size: 18px;
-    margin-right: -77px;
   }
 
   .order__final-wrapper {
@@ -129,7 +127,7 @@ section.order__step {
   }
 
   .order__submit-title {
-    margin-top: 32px;
+    margin-top: 20px;
     font-size: 18px;
   }
 
@@ -154,7 +152,11 @@ section.order__step {
   }
 
   .order__submit-input-wrapper {
-    padding-top: 6px;
+    padding-top: 0;
+  }
+
+  .order__submit-input {
+    margin-bottom: 0;
   }
 
   .order__submit-button {
@@ -179,9 +181,9 @@ section.order__step {
 
 @media (min-width: @desktop-shift-width) {
   .order .content-wrapper {
-    max-width: @desktop-shift-width;
-    padding-left: 34px;
-    padding-right: 34px;
+    max-width: @desktop-max-width;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 
   .order__title {
@@ -207,7 +209,6 @@ section.order__step {
   }
 
   .order__step-title {
-    //margin-right: 0;
     font-size: 27px;
   }
 

@@ -82,19 +82,16 @@
 }
 
 @media (min-width: @tablet-shift-width) {
-  .contacts {
-    background-image: url("../img/contacts-back-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 187% bottom;
-    background-size: 602px;
-  }
-
   .contacts .content-wrapper {
     padding-left: 47px;
     padding-right: 47px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url("../img/contacts-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 602px;
   }
 
   .contacts__title {
@@ -131,24 +128,24 @@
     margin: 40px 40px 0 0;
     list-style: none;
   }
+
+  .contacts__social-text {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: @desktop-shift-width) {
-  .contacts {
-    background-image: url("../img/contacts-back-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 952px;
-  }
-
   .contacts .content-wrapper {
     justify-content: space-between;
     align-content: baseline;
-    max-width: @desktop-shift-width;
+    max-width: @desktop-max-width;
     min-height: 845px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 72px;
+    padding-right: 72px;
     font-size: 20px;
+    background: @right-border-gradient 100%,
+      url("../img/contacts-back-desktop.png") bottom right no-repeat;
+    background-size: 952px;
   }
 
   .contacts__title {
