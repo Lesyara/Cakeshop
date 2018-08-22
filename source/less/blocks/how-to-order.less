@@ -1,15 +1,14 @@
 .how-to-order {
   background: @offer-block-normal-color;
-  //background-image: linear-gradient(to bottom, @offer-block-normal-color, @offer-block-normal-color 80%, @offer-block-dark-color);
+  background-image: linear-gradient(to top, #d72631, #ea4145);
 }
 
 .how-to-order .content-wrapper {
-  max-width: 275px;
   color: @secondary-font-color;
-  background-image: url("../img/how-to-order-back-mobile.png");
+  background-image: url("../img/how-to-order-back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 236px auto, cover;
+  background-position: center 310px;
+  background-size: auto 232px;
 }
 
 .how-to-order__title {
@@ -18,45 +17,58 @@
 }
 
 .how-to-order__features {
+  max-width: 275px;
+  margin: 0 auto;
   padding-left: 0;
   padding-bottom: 145px;
-  margin: 0;
   list-style: none;
 }
 
 @media (min-width: @tablet-shift-width) {
   .how-to-order .content-wrapper {
-    max-width: 520px;
-    padding-left: 200px;
-    background-image: url("../img/how-to-order-tablet.jpg"); //linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
-    background-position: bottom left;
-    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 193px;
+    background-image: url("../img/how-to-order-back-tablet.jpg");
+    background-position: -303px -7px;
+    background-size: 1026px auto;
   }
+
 
   .how-to-order__title {
     display: inline-block;
+    width: 310px;
     padding-top: 46px;
     padding-bottom: 34px;
+    text-align: left;
   }
 
   .how-to-order__features {
+    max-width: 310px;
+    margin: 0;
     padding-bottom: 64px;
   }
 }
 
 @media (min-width: @desktop-shift-width) {
   .how-to-order .content-wrapper {
-    max-width: 1140px;
-    padding-left: 700px;
-    background-image: url("../img/how-to-order-desktop.png");//linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
-    background-size: 838px auto, cover;
+    max-width: 1366px;
+    align-items: flex-start;
+    padding-left: 820px;
+    background-image: url("../img/how-to-order-back-desktop.jpg");//linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
+    background-size: auto 885px;
+    background-position: -220px -45px;
   }
 
   .how-to-order__title {
+    width: 500px;
     padding-top: 118px;
   }
 
   .how-to-order__features {
+    max-width: 500px;
     padding-bottom: 175px;
     font-size: 20px;
   }

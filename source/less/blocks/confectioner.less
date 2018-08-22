@@ -28,23 +28,24 @@
 }
 
 .confectioner__social-inst {
-  background-image: url("../img/icon-instagram.png");
+  background-image: url("../img/instagram-icon.svg");
   background-size: 18px;
 }
 
 .confectioner__social-vk {
-  background-image: url("../img/icon-vk.png");
-  background-size: 23px 13px;
+  background-image: url("../img/vk-icon.svg");
+  background-size: 22px;
+  background-position: 6px 6px;
 }
 
 .confectioner__social-twitter {
-  background-image: url("../img/icon-twitter.png");
+  background-image: url("../img/twitter-icon.svg");
   background-size: 19px 16px;
 }
 
 .confectioner__info {
   margin-top: 13px;
-  margin-bottom: 38px;
+  //margin-bottom: 38px;
 }
 
 .confectioner__info-title {
@@ -71,6 +72,8 @@
 }
 
 .confectioner__quote {
+  position: relative;
+  padding-top: 38px;
   padding-bottom: 52px;
   background-image: url("../img/author-sign-mobile.png");
   background-repeat: no-repeat;
@@ -78,8 +81,19 @@
   background-size: 64px 31px;
 }
 
+.confectioner__quote-decor {
+  position: absolute;
+  top: -9px;
+  width: 100%;
+  font-family: @secondary-font-bold, @web-safe-font, @web-safe-default-font;
+  color: @secondary-font-color;
+  font-size: 60px;
+  text-align: center;
+}
+
 .confectioner__quote-text {
-  margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
   font-family: @secondary-font-bold-italic, @web-safe-font, @web-safe-default-font;
   font-size: 13px;
   line-height: 1.2;
@@ -90,7 +104,7 @@
   .confectioner__wrapper {
     flex-direction: column;
     justify-content: flex-start;
-    height: 310px;
+    height: 290px;
     flex-grow: 1;
   }
 
@@ -126,10 +140,14 @@
 
   .confectioner__quote {
     flex-grow: 1;
-    padding-top: 29px;
+    padding-top: 51px;
     padding-bottom: 67px;
     background-image: url("../img/author-sign-tablet.png");
     background-size: 82px 40px;
+  }
+
+  .confectioner__quote-decor {
+    font-size: 77px;
   }
 
   .confectioner__fact-title {
@@ -179,6 +197,11 @@
     background-size: 149px 73px;
     padding-top: 100px;
     padding-bottom: 132px;
+  }
+
+  .confectioner__quote-decor {
+    top: -14px;
+    font-size: 140px;
   }
 
   .confectioner__quote-text {

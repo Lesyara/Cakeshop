@@ -25,8 +25,8 @@
 }
 
 .advantages__list {
-  padding-top: 18px;
-  padding-bottom: 27px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   padding-left: 0;
   margin: 0;
   list-style: none;
@@ -38,10 +38,26 @@
   text-align: center;
 }
 
+
 .advantages__item-title {
-  padding-top: 70px;
+  padding-top: 72px;
+  padding-bottom: 4px;
   font-size: 16px;
   font-family: @main-font-bold, @web-safe-font, @web-safe-default-font;
+}
+
+.advantages__item--natural {
+  background-image: url("../img/ingredients-mobile.png");
+  background-size: 61px 61px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.advantages__item--fresh {
+  background-image: url("../img/cake-mobile.png");
+  background-size: 84px 50px;
+  background-repeat: no-repeat;
+  background-position: center 14px;
 }
 
 .advantages__item-text {
@@ -88,6 +104,19 @@
     max-width: 365px;
     padding-left: 85px;
     margin-left: auto;
+    background-position: left 0;
+  }
+
+  .advantages__item--natural {
+    background-image: url("../img/ingredients-tablet.png");
+    background-size: 48px 48px;
+    background-position: 9px 11px;
+  }
+
+  .advantages__item--fresh {
+    background-image: url("../img/cake-tablet.png");
+    background-size: 63px 38px;
+    background-position: left 12px;
   }
 
   .advantages__item-title {
@@ -116,7 +145,7 @@
   }
 
   .advantages__list-wrapper {
-    width: 680px;
+    width: 690px;
     margin-top: 120px;
     margin-left: auto;
   }
@@ -133,9 +162,21 @@
   .advantages__item {
     max-width: 480px;
     margin-left: 0;
-    padding-left: 100px;
+    padding-left: 95px;
     padding-bottom: 20px;
     font-size: 20px;
+  }
+
+  .advantages__item--natural {
+    background-image: url("../img/ingredients-desktop.png");
+    background-size: 61px 61px;
+    background-position: 16px 21px;
+  }
+
+  .advantages__item--fresh {
+    background-image: url("../img/cake-desktop.png");
+    background-size: 84px auto;
+    background-position: left 21px;
   }
 
   .advantages__item-title {

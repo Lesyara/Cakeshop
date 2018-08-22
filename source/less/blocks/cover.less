@@ -25,7 +25,7 @@
 }
 
 .cover__subtitle {
-  margin: 15px 0 21px;
+  margin: 15px 0 18px;
   font-family: @accent-font, @web-safe-font, @web-safe-default-font;
   font-size: 22px;
   line-height: 1.2;
@@ -39,13 +39,24 @@
 }
 
 .cover__feature-text {
-  max-width: 210px;
-  margin: 0 auto 28px;
-  padding-left: 7px;
+  max-width: 280px;
+  min-height: 38px;
+  margin: 0 auto 8px;
+  padding-left: 42px;
+  padding-top: 2px;
 }
 
-.cover__feature:last-of-type .cover__feature-text {
-  margin-bottom: 40px;
+.cover__feature--delivery .cover__feature-text {
+  margin-bottom: 36px;
+  background-image: url("../img/delivery-mobile.png");
+  background-size: 33px 32px;
+  background-repeat: no-repeat;
+}
+
+.cover__feature--ingredients .cover__feature-text {
+  background-image: url("../img/ingredients-mobile.png");
+  background-size: 33px 33px;
+  background-repeat: no-repeat;
 }
 
 .cover__make-choice {
@@ -85,7 +96,7 @@
 
   .cover__features {
     order: 1;
-    margin-top: 144px;
+    margin-top: 150px;
   }
 
   .cover__features li {
@@ -95,9 +106,23 @@
   .cover__feature-text {
     display: inline-block;
     vertical-align: top;
-    max-width: 220px;
-    padding-top: 21px;
+    max-width: 215px;
+    min-height: 58px;
+    margin: 0;
+    padding-top: 15px;
     padding-left: 67px;
+  }
+
+  .cover__feature--delivery .cover__feature-text {
+    background-image: url("../img/delivery-tablet.png");
+    background-size: 55px 54px;
+    max-width: 220px;
+    margin: 0;
+  }
+
+  .cover__feature--ingredients .cover__feature-text {
+    background-image: url("../img/ingredients-tablet.png");
+    background-size: 55px 55px; // padding-bottom: 6px;
   }
 
   .cover__make-choice {
@@ -115,8 +140,7 @@
     min-height: 945px;
     padding-left: 72px;
     padding-right: 72px;
-    background: @right-border-gradient,
-      url("../img/cover-back-desktop.png") 228px -170px no-repeat content-box;
+    background: @right-border-gradient, url("../img/cover-back-desktop.png") 228px -170px no-repeat content-box;
     background-size: 1300px auto;
   }
 
@@ -135,5 +159,18 @@
 
   .cover__features {
     margin-top: 124px;
+  }
+
+  .cover__feature-text {
+    padding-top: 20px;
+  }
+
+  .cover__feature--delivery .cover__feature-text {
+    // background-image: url("../img/delivery-desktop.png");
+  }
+
+  .cover__feature--ingredients .cover__feature-text {
+    // background-image: url("../img/delivery-desktop.png");
+    // padding-bottom: 6px;
   }
 }
