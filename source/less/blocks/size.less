@@ -1,4 +1,5 @@
 .size {
+  position: relative;
   padding: 4px 19px 26px;
 }
 
@@ -32,10 +33,42 @@
   }
 }
 
+.size__choice-wrapper {
+  position: relative;
+}
+
 .size__choice-indicator {
+  position: absolute;
+  top: 235px;
+  width: 100%;
   text-align: center;
   margin-bottom: 8px;
   margin-top: 5px;
+  font-size: 0;
+}
+
+input[name="size-indicator"] + label {
+  padding-right: 3px;
+}
+
+input[name="size-indicator"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: @border-color;
+  cursor: pointer;
+}
+
+input[name="size-indicator"]:checked + label::before {
+  background-color: @accent-color;
+}
+
+
+.size__choice-indicator input[type="radio"] {
+  display: none;
 }
 
 .size__value {
@@ -46,6 +79,7 @@
 
 .size__text {
   margin-bottom: 60px;
+  margin-top: 70px;
   text-align: center;
   font-family: @main-font-regular, @web-safe-font, @web-safe-default-font;
   font-size: 14px;
@@ -93,26 +127,26 @@
     }
 
     &--small .size__preview {
-      min-width: 109px; // 77px + padding 16px * 2
+      min-width: 109px;
       height: 109px;
       background-size: 77px 77px;
     }
 
     &--medium .size__preview {
-      min-width: 139px; // 107px + padding 16px * 2
+      min-width: 139px;
       height: 139px;
       background-size: 107px 107px;
     }
 
     &--big .size__preview {
-      min-width: 152px; // 120px + padding 16px * 2
+      min-width: 152px;
       height: 152px;
       background-image: url("../img/circle.svg"), url("../img/circle.svg");
       background-size: 120px 120px, 84px 84px;
     }
 
     &--huge .size__preview {
-      min-width: 172px; // 140px + padding 16px * 2
+      min-width: 172px;
       height: 172px;
       background-image: url("../img/circle.svg"), url("../img/circle.svg"), url("../img/circle.svg");
       background-size: 67px, 98px, 140px;
@@ -154,25 +188,25 @@
 
   .size__item {
     &--small .size__preview {
-      min-width: 142px; // 110px + padding 16px * 2
+      min-width: 142px;
       height: 142px;
       background-size: 110px;
     }
 
     &--medium .size__preview {
-      min-width: 187px; // 155px + padding 16px * 2
+      min-width: 187px;
       height: 187px;
       background-size: 155px 155px;
     }
 
     &--big .size__preview {
-      min-width: 206px; // 174px + padding 16px * 2
+      min-width: 206px;
       height: 206px;
       background-size: 174px 174px, 120px 120px;
     }
 
     &--huge .size__preview {
-      min-width: 232px; // 200px + padding 16px * 2
+      min-width: 232px;
       height: 232px;
       background-size: 96px, 140px, 200px;
     }

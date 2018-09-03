@@ -25,6 +25,12 @@
   background-position: center;
   padding-left: 31px;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.confectioner__social-item:hover,
+.confectioner__social-item:active {
+  box-shadow: 0 2px 8px 1px @accent-shadow-color;
 }
 
 .confectioner__social-inst {
@@ -120,6 +126,7 @@
 
   .confectioner__photo {
     margin-left: auto;
+    max-height: 310px;
   }
 
   .confectioner__social {
@@ -168,6 +175,7 @@
 
 @media (min-width: @desktop-shift-width) {
   .confectioner__wrapper {
+    max-width: 1150px;
     height: 510px;
   }
 
@@ -180,6 +188,10 @@
 
   .confectioner__info-title {
     font-size: 35px;
+  }
+
+  .confectioner__wrapper picture {
+    margin-top: -85px;
   }
 
   .confectioner__fact-text {
@@ -202,6 +214,10 @@
   .confectioner__quote-decor {
     top: -14px;
     font-size: 140px;
+  }
+
+  .confectioner__photo {
+    max-height: 508px;
   }
 
   .confectioner__quote-text {

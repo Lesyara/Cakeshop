@@ -1,5 +1,6 @@
 .decoration__choice-wrapper {
   display: block;
+  position: relative;
 }
 
 .decoration__choice-list {
@@ -43,12 +44,40 @@
 }
 
 .decoration__choice-indicator {
+  position: absolute;
+  top: 198px;
+  width: 100%;
   text-align: center;
   margin-bottom: 8px;
   margin-top: 5px;
+  font-size: 0;
+}
+
+input[name="decoration-indicator"] + label {
+  padding-right: 3px;
+}
+
+input[name="decoration-indicator"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: @border-color;
+  cursor: pointer;
+}
+
+input[name="decoration-indicator"]:checked + label::before {
+  background-color: @accent-color;
+}
+
+.decoration__choice-indicator input[type="radio"] {
+  display: none;
 }
 
 .decoration__type {
+  margin-top: 29px;
   text-align: center;
   line-height: 1.5;
 }
@@ -156,7 +185,6 @@
 
   .decoration__price {
     position: relative;
-    //margin-bottom: 16px;
   }
 }
 

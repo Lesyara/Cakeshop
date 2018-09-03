@@ -60,87 +60,145 @@
       <div class="content-wrapper">
         <h2 class="cakes__title section-title">Наши торты</h2>
         <div class="cakes__list">
-          <div class="cakes__item cakes__item--classic">
-            <a class="cakes__link">
-              <div class="cakes__link-info">
-                <div class="cakes__link-title">Классические</div>
+          <div class="cakes__items-wrapper">
+            <div class="cakes__item cakes__item--classic">
+              <div class="cakes__item-info">
+                <div class="cakes__item-title">Классические</div>
                 24 вида
               </div>
-              <picture>
-                <source media="(min-width: 1290px)" srcset="../img/content/classic-cakes-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/content/classic-cakes-tablet.jpg">
-                <img class="cakes__link-image" src="../img/content/classic-cakes-mobile.jpg" alt="Фото классического торта">
-              </picture>
-            </a>
-          </div>
-          <div class="cakes__items-group">
-            <div class="cakes__item">
-              <a class="cakes__link">
-                <div class="cakes__link-info">
-                  <div class="cakes__link-title">Муссовые</div>
-                  12 видов
-                </div>
+              <div class="cakes__item-picture">
                 <picture>
-                  <source media="(min-width: 1290px)" srcset="../img/content/muss-cakes-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="../img/content/muss-cakes-tablet.jpg">
-                  <img class="cakes__link-image" src="../img/content/muss-cakes-mobile.jpg" alt="Фото муссового торта">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/classic-cakes-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/classic-cakes-tablet.webp">
+                  <source type="image/webp" srcset="img/content/classic-cakes-mobile.webp">
+
+                  <source media="(min-width: 1290px)" srcset="img/content/classic-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/classic-cakes-tablet.jpg">
+                  <img class="cakes__item-image" src="img/content/classic-cakes-mobile.jpg" alt="Фото классического торта">
                 </picture>
+              </div>
+              <a class="cakes__item-link">Смотреть
+                <svg class="cakes__link-arrow">
+                  <use xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                </svg>
               </a>
             </div>
-            <div class="cakes__item">
-              <a class="cakes__link">
-                <div class="cakes__link-info">
-                  <div class="cakes__link-title">Свадебные</div>
+            <div class="cakes__items-group">
+              <div class="cakes__item">
+                <div class="cakes__item-info">
+                  <div class="cakes__item-title">Муссовые</div>
+                  12 видов
+                </div>
+                <div class="cakes__item-picture">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/muss-cakes-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/muss-cakes-tablet.webp">
+                    <source type="image/webp" srcset="img/content/muss-cakes-mobile.webp">
+
+                    <source media="(min-width: 1290px)" srcset="img/content/muss-cakes-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/content/muss-cakes-tablet.jpg">
+                    <img class="cakes__item-image" src="img/content/muss-cakes-mobile.jpg" alt="Фото муссового торта">
+                  </picture>
+                </div>
+                <a class="cakes__item-link">Смотреть
+                  <svg class="cakes__link-arrow">
+                    <use class="arrow-long" xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                  </svg>
+                </a>
+              </div>
+              <div class="cakes__item">
+                <div class="cakes__item-info">
+                  <div class="cakes__item-title">Свадебные</div>
                   20 видов
                 </div>
-                <picture>
-                  <source media="(min-width: 1290px)" srcset="../img/content/wedding-cakes-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="../img/content/wedding-cakes-tablet.jpg">
-                  <img class="cakes__link-image" src="../img/content/wedding-cakes-mobile.jpg" alt="Фото свадебного торта">
-                </picture>
-              </a>
+                <div class="cakes__item-picture">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/wedding-cakes-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/wedding-cakes-tablet.webp">
+                    <source type="image/webp" srcset="img/content/wedding-cakes-mobile.webp">
+
+                    <source media="(min-width: 1290px)" srcset="img/content/wedding-cakes-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/content/wedding-cakes-tablet.jpg">
+                    <img class="cakes__item-image" src="img/content/wedding-cakes-mobile.jpg" alt="Фото свадебного торта">
+                  </picture>
+                </div>
+                <a class="cakes__item-link">Смотреть
+                  <svg class="cakes__link-arrow">
+                    <use class="arrow-long" xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="cakes__items-group">
-            <div class="cakes__item">
-              <a class="cakes__link">
-                <div class="cakes__link-info">
-                  <div class="cakes__link-title">Мужчинам</div>
+          <div class="cakes__items-wrapper">
+            <div class="cakes__items-group">
+              <div class="cakes__item">
+                <div class="cakes__item-info">
+                  <div class="cakes__item-title">Мужчинам</div>
                   12 видов
                 </div>
-                <picture>
-                  <source media="(min-width: 1290px)" srcset="../img/content/mens-cakes-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="../img/content/mens-cakes-tablet.jpg">
-                  <img class="cakes__link-image" src="../img/content/mens-cakes-mobile.jpg" alt="Фото торта для мужчин">
-                </picture>
-              </a>
-            </div>
-            <div class="cakes__item">
-              <a class="cakes__link">
-                <div class="cakes__link-info">
-                  <div class="cakes__link-title">Женщинам</div>
+                <div class="cakes__item-picture">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/mens-cakes-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/mens-cakes-tablet.webp">
+                    <source type="image/webp" srcset="img/content/mens-cakes-mobile.webp">
+
+                    <source media="(min-width: 1290px)" srcset="img/content/mens-cakes-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/content/mens-cakes-tablet.jpg">
+                    <img class="cakes__item-image" src="img/content/mens-cakes-mobile.jpg" alt="Фото торта для мужчин">
+                  </picture>
+                </div>
+                <a class="cakes__item-link">Смотреть
+                  <svg class="cakes__link-arrow">
+                    <use class="arrow-long" xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                  </svg>
+                </a>
+              </div>
+              <div class="cakes__item">
+                <div class="cakes__item-info">
+                  <div class="cakes__item-title">Женщинам</div>
                   16 видов
                 </div>
-                <picture>
-                  <source media="(min-width: 1290px)" srcset="../img/content/womans-cakes-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="../img/content/womans-cakes-tablet.jpg">
-                  <img class="cakes__link-image" src="../img/content/womans-cakes-mobile.jpg" alt="Фото торта для женщин">
-                </picture>
-              </a>
+                <div class="cakes__item-picture">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/womans-cakes-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/womans-cakes-tablet.webp">
+                    <source type="image/webp" srcset="img/content/womans-cakes-mobile.webp">
+
+                    <source media="(min-width: 1290px)" srcset="img/content/womans-cakes-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/content/womans-cakes-tablet.jpg">
+                    <img class="cakes__item-image" src="img/content/womans-cakes-mobile.jpg" alt="Фото торта для женщин">
+                  </picture>
+                </div>
+                <a class="cakes__item-link">Смотреть
+                  <svg class="cakes__link-arrow">
+                    <use class="arrow-long" xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="cakes__item cakes__item--for-children">
-            <a class="cakes__link">
-              <div class="cakes__link-info">
-                <div class="cakes__link-title">Детские</div>
+            <div class="cakes__item cakes__item--for-children">
+              <div class="cakes__item-info">
+                <div class="cakes__item-title">Детские</div>
                 18 видов
               </div>
-              <picture>
-                <source media="(min-width: 1290px)" srcset="../img/content/children-cakes-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/content/children-cakes-tablet.jpg">
-                <img class="cakes__link-image" src="../img/content/children-cakes-mobile.jpg" alt="Фото торта для детей">
-              </picture>
-            </a>
+              <div class="cakes__item-picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/children-cakes-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/children-cakes-tablet.webp">
+                  <source type="image/webp" srcset="img/content/children-cakes-mobile.webp">
+
+                  <source media="(min-width: 1290px)" srcset="img/content/children-cakes-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/content/children-cakes-tablet.jpg">
+                  <img class="cakes__item-image" src="img/content/children-cakes-mobile.jpg" alt="Фото торта для детей">
+                </picture>
+              </div>
+              <a class="cakes__item-link">Смотреть
+                <svg class="cakes__link-arrow">
+                  <use class="arrow-long" xlink:href="img/sprite.svg#arrow" x="0" y="0" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -162,18 +220,15 @@
                 <li class="filling__item">
                   <div class="filling__preview">
                     <picture>
-                      <source media="(min-width: 1290px)" srcset="../img/content/filling-choko-desktop.jpg">
-                      <source media="(min-width: 768px)" srcset="../img/content/filling-choko-tablet.jpg">
-                      <img class="filling__img" src="../img/content/filling-choko-mobile.jpg" alt="Шоколадный ганаш">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/filling-choko-desktop.webp">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/content/filling-choko-tablet.webp">
+                      <source type="image/webp" srcset="img/content/filling-choko-mobile.webp">
+
+                      <source media="(min-width: 1290px)" srcset="img/content/filling-choko-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="img/content/filling-choko-tablet.jpg">
+                      <img class="filling__img" src="img/content/filling-choko-mobile.jpg" alt="Шоколадный ганаш">
                     </picture>
                     <span class="filling__count--img">1/12</span>
-                  </div>
-                  <div class="filling__choice-indicator">
-                    <input type="radio" disabled name="filling-indicator" checked>
-                    <input type="radio" disabled name="filling-indicator">
-                    <input type="radio" disabled name="filling-indicator">
-                    <input type="radio" disabled name="filling-indicator">
-                    <input type="radio" disabled name="filling-indicator">
                   </div>
                   <div class="filling__info">
                     <div class="filling__item-title">Шоколадный ганаш</div>
@@ -184,6 +239,28 @@
                   <button class="filling__submit-choice user-action__button">Выбрать</button>
                 </li>
               </ul>
+              <div class="filling__choice-indicator">
+                <input type="radio" id="filling-indicator-one" name="filling-indicator" disabled checked>
+                <label for="filling-indicator-one">
+                  Первый
+                </label>
+                <input type="radio" id="filling-indicator-two" name="filling-indicator" disabled>
+                <label for="filling-indicator-two">
+                  Второй
+                </label>
+                <input type="radio" id="filling-indicator-three" name="filling-indicator" disabled>
+                <label for="filling-indicator-three">
+                  Третий
+                </label>
+                <input type="radio" id="filling-indicator-four" name="filling-indicator" disabled>
+                <label for="filling-indicator-four">
+                  Четвертый
+                </label>
+                <input type="radio" id="filling-indicator-five" name="filling-indicator" disabled>
+                <label for="filling-indicator-five">
+                  Пятый
+                </label>
+              </div>
               <a class="filling__next user-action__next-link">
                 <span>Вперед</span>
               </a>
@@ -192,70 +269,58 @@
           </section>
           <section class="order__step size">
             <h3 class="order__step-title size__title">
-              <div class="order__step-number">02</div> Размер
+              <div class="order__step-number">02</div>Размер
             </h3>
-            <ul class="size__list">
-              <li class="size__item size__item--small">
-                <a class="size__preview">
-                  <span class="size__value">1 кг</span>
-                </a>
-                <div class="size__choice-indicator">
-                  <input type="radio" disabled name="size-indicator" checked>
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                </div>
-                <div class="size__text">17-18 см
-                  <div class="size__text-brackets">(1 кг – 6 персон)</div>
-                </div>
-                <button class="size__choose user-action__button">Выбрать</button>
-              </li>
-              <li class="size__item size__item--medium">
-                <a class="size__preview">
-                  <span class="size__value">2 кг</span>
-                </a>
-                <div class="size__choice-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator" checked>
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                </div>
-                <div class="size__text">23-24 см
-                  <div class="size__text-brackets">(10–12 персон)</div>
-                </div>
-                <button class="size__choose user-action__button">Выбрать</button>
-              </li>
-              <li class="size__item size__item--big">
-                <a class="size__preview">
-                  <span class="size__value">5 кг</span>
-                </a>
-                <div class="size__choice-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator" checked>
-                  <input type="radio" disabled name="size-indicator">
-                </div>
-                <div class="size__text">Два яруса 25 и 20 см
-                  <div class="size__text-brackets">(15–20 персон)</div>
-                </div>
-                <button class="size__choose user-action__button">Выбрать</button>
-              </li>
-              <li class="size__item size__item--huge">
-                <a class="size__preview">
-                  <span class="size__value">8 кг</span>
-                </a>
-                <div class="size__choice-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator">
-                  <input type="radio" disabled name="size-indicator" checked>
-                </div>
-                <div class="size__text">Три яруса 30,25 и 18 см
-                  <div class="size__text-brackets">(25–30 персон)</div>
-                </div>
-                <button class="size__choose user-action__button">Выбрать</button>
-              </li>
-            </ul>
+            <div class="size__choice-wrapper">
+              <ul class="size__list">
+                <li class="size__item size__item--small">
+                  <a class="size__preview">
+                    <span class="size__value">1 кг</span>
+                  </a>
+                  <div class="size__text">17-18 см
+                    <div class="size__text-brackets">(1 кг – 6 персон)</div>
+                  </div>
+                  <button class="size__choose user-action__button">Выбрать</button>
+                </li>
+                <li class="size__item size__item--medium">
+                  <a class="size__preview">
+                    <span class="size__value">2 кг</span>
+                  </a>
+                  <div class="size__text">23-24 см
+                    <div class="size__text-brackets">(10–12 персон)</div>
+                  </div>
+                  <button class="size__choose user-action__button">Выбрать</button>
+                </li>
+                <li class="size__item size__item--big">
+                  <a class="size__preview">
+                    <span class="size__value">5 кг</span>
+                  </a>
+                  <div class="size__text">Два яруса 25 и 20 см
+                    <div class="size__text-brackets">(15–20 персон)</div>
+                  </div>
+                  <button class="size__choose user-action__button">Выбрать</button>
+                </li>
+                <li class="size__item size__item--huge">
+                  <a class="size__preview">
+                    <span class="size__value">8 кг</span>
+                  </a>
+                  <div class="size__text">Три яруса 30,25 и 18 см
+                    <div class="size__text-brackets">(25–30 персон)</div>
+                  </div>
+                  <button class="size__choose user-action__button">Выбрать</button>
+                </li>
+              </ul>
+              <div class="size__choice-indicator">
+                <input type="radio" id="size-indicator-one" name="size-indicator" disabled checked>
+                <label for="size-indicator-one">Первый</label>
+                <input type="radio" id="size-indicator-two" name="size-indicator" disabled>
+                <label for="size-indicator-two">Второй</label>
+                <input type="radio" id="size-indicator-three" name="size-indicator" disabled>
+                <label for="size-indicator-three">Третий</label>
+                <input type="radio" id="size-indicator-four" name="size-indicator" disabled>
+                <label for="size-indicator-four">Четвертый</label>
+              </div>
+            </div>
           </section>
           <div class="order__step order__final-wrapper">
             <section class="decoration">
@@ -270,18 +335,11 @@
                   <li class="decoration__item decoration__item--berries">
                     <div class="decoration__preview">
                       <picture class="decoration__img">
-                        <source media="(min-width: 1290px)" srcset="../img/content/berries-desktop.jpg">
-                        <source media="(min-width: 768px)" srcset="../img/content/berries-tablet.jpg">
-                        <img src="../img/content/berries-tablet.jpg" alt="Ягодное ассорти">
+                        <source media="(min-width: 1290px)" srcset="img/content/berries-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/content/berries-tablet.jpg">
+                        <img src="img/content/berries-tablet.jpg" alt="Ягодное ассорти">
                       </picture>
                       <span class="decoration__count--img">1/35</span>
-                    </div>
-                    <div class="decoration__choice-indicator">
-                      <input type="radio" disabled name="decoration-indicator" checked>
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
                     </div>
                     <div class="decoration__type">Ягодное ассорти</div>
                     <div class="decoration__price">700 руб/кг</div>
@@ -290,24 +348,29 @@
                   <li class="decoration__item decoration__item--marshmallow">
                     <div class="decoration__preview">
                       <picture class="decoration__img">
-                        <source media="(min-width: 1290px)" srcset="../img/content/marshmallow-desktop.jpg">
-                        <source media="(min-width: 768px)" srcset="../img/content/marshmallow-tablet.jpg">
-                        <img src="../img/content/marshmallow-mobile.jpg" alt="Маршмэллоу">
+                        <source media="(min-width: 1290px)" srcset="img/content/marshmallow-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/content/marshmallow-tablet.jpg">
+                        <img src="img/content/marshmallow-mobile.jpg" alt="Маршмэллоу">
                       </picture>
                       <span class="decoration__count--img">1/35</span>
-                    </div>
-                    <div class="decoration__choice-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator" checked>
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
-                      <input type="radio" disabled name="decoration-indicator">
                     </div>
                     <div class="decoration__type">Маршмэллоу</div>
                     <div class="decoration__price">600 руб/кг</div>
                     <button class="decoration__choose user-action__button">Выбрать</button>
                   </li>
                 </ul>
+                <div class="decoration__choice-indicator">
+                  <input type="radio" id="decoration-indicator-one" name="decoration-indicator" disabled checked>
+                  <label for="decoration-indicator-one">Первый</label>
+                  <input type="radio" id="decoration-indicator-two" name="decoration-indicator" disabled>
+                  <label for="decoration-indicator-two">Второй</label>
+                  <input type="radio" id="decoration-indicator-three" name="decoration-indicator" disabled>
+                  <label for="decoration-indicator-three">Третий</label>
+                  <input type="radio" id="decoration-indicator-four" name="decoration-indicator" disabled>
+                  <label for="decoration-indicator-four">Четвертый</label>
+                  <input type="radio" id="decoration-indicator-five" name="decoration-indicator" disabled>
+                  <label for="decoration-indicator-five">Пятый</label>
+                </div>
                 <a class="decoration__next user-action__next-link">
                   <span>Вперед</span>
                 </a>
@@ -351,9 +414,13 @@
           </a>
           <div class="feedback__item">
             <picture>
-              <source media="(min-width: 1290px)" srcset="../img/content/feedback-photo-desktop.png">
-              <source media="(min-width: 768px)" srcset="../img/content/feedback-photo-tablet.png">
-              <img class="feedback__author-photo" src="../img/content/feedback-photo-mobile.png" alt="Автор отзыва">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/feedback-photo-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/feedback-photo-tablet.webp">
+              <source type="image/webp" srcset="img/content/feedback-photo-mobile.webp">
+
+              <source media="(min-width: 1290px)" srcset="img/content/feedback-photo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/content/feedback-photo-tablet.png">
+              <img class="feedback__author-photo" src="img/content/feedback-photo-mobile.png" alt="Автор отзыва">
             </picture>
             <cite>
               <div class="feedback__author-name">Мария</div>
@@ -363,14 +430,19 @@
               за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
               <a class="feedback__show-more">Развернуть</a>
             </blockquote>
-            <div class="feedback__show-indicator">
-              <input type="radio" disabled name="feedback-indicator" checked>
-              <input type="radio" disabled name="feedback-indicator">
-              <input type="radio" disabled name="feedback-indicator">
-              <input type="radio" disabled name="feedback-indicator">
-              <input type="radio" disabled name="feedback-indicator">
-            </div>
             <span class="feedback__count">1/26</span>
+          </div>
+          <div class="feedback__show-indicator">
+            <input type="radio" id="feedback-indicator-one" name="feedback-indicator" disabled checked>
+            <label for="feedback-indicator-one">Первый</label>
+            <input type="radio" id="feedback-indicator-two" name="feedback-indicator" disabled>
+            <label for="feedback-indicator-two">Второй</label>
+            <input type="radio" id="feedback-indicator-three" name="feedback-indicator" disabled>
+            <label for="feedback-indicator-three">Третий</label>
+            <input type="radio" id="feedback-indicator-four" name="feedback-indicator" disabled>
+            <label for="feedback-indicator-four">Четвертый</label>
+            <input type="radio" id="feedback-indicator-five" name="feedback-indicator" disabled>
+            <label for="feedback-indicator-five">Пятый</label>
           </div>
           <a class="feedback__next user-action__next-link">
             <span>Следующий</span>
@@ -384,9 +456,13 @@
         <div class="shop-info__confectioner confectioner">
           <div class="confectioner__wrapper">
             <picture>
-              <source media="(min-width: 1290px)" srcset="../img/content/confectioner-photo-desktop.png">
-              <source media="(min-width: 768px)" srcset="../img/content/confectioner-photo-tablet.png">
-              <img class="confectioner__photo" src="../img/content/confectioner-photo-mobile.png">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/confectioner-photo-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/confectioner-photo-tablet.webp">
+              <source type="image/webp" srcset="img/content/confectioner-photo-mobile.webp">
+
+              <source media="(min-width: 1290px)" srcset="img/content/confectioner-photo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/content/confectioner-photo-tablet.png">
+              <img class="confectioner__photo" src="img/content/confectioner-photo-mobile.png">
             </picture>
             <ul class="confectioner__social">
               <li class="confectioner__social-item confectioner__social-inst">
@@ -578,39 +654,17 @@
       <div class="main-footer__cite-info">
         <ul class="main-footer__social-list">
           <li>
-            <a class="main-footer__social-item social-icon">
-              <svg class="social-icon__img social-icon__img--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path class="social-icon__path" d="M373.7 0H138.3A138.5 138.5 0 0 0 0 138.3v235.3C0 449.9 62.1 512 138.3 512h235.3c76.3
-                 0 138.3-62.1 138.3-138.3V138.3C512 62.1 449.9 0 373.7 0zm96.9 373.7a97 97 0 0 1-97 97H138.3a97 97 0 0 1-97-97V138.3a97 97
-                  0 0 1 97-97h235.3a97 97 0 0 1 97 97v235.4z" />
-                <path class="social-icon__path" d="M370.6 238.1a114.6 114.6 0 0 0-205.8-51.5 114 114 0 0 0-21.4 85.2 114 114 0 0 0 45.2 75.4
-                114.2 114.2 0 0 0 85.3 21.3 114 114 0 0 0 75.4-45.2 114.1 114.1 0 0 0 21.3-85.2zm-102.8 89.5a73.3 73.3 0 1 1 .1-145.3 73 73 0
-                0 1 61.9 61.9 73.6 73.6 0 0 1-62 83.4zM400 112a20.6 20.6 0 0 0-29.2 0 20.4 20.4 0 0 0 0 29.2 20.6 20.6 0 0 0 29.2 0 20.4 20.4
-                0 0 0 0-29.2z" />
+            <a href="https://www.instagram.com/" class="main-footer__social-item social-icon">
+              <svg class="social-icon__img social-icon__img--instagram" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#inst-icon" x="0" y="0" />
               </svg>
               <span class="visually-hidden">instagram</span>
             </a>
           </li>
           <li>
-            <a class="main-footer__social-item social-icon">
-              <svg class="social-icon__img social-icon__img--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path class="social-icon__path" stroke-miterlimit="10" d="M489.2 385.6c-11.1-13.3-23.7-25.3-35.9-36.8-4.3-4.1-8.7-8.2-13-12.4-5.7-5.6-8.5
-                -9.6-8.8-12.5s1.7-7.2 6.2-13.5c6.8-9.5 14-19 21-28.2 6.2-8.2 12.6-16.6 18.8-25.1l1.4-1.9c12-16.6 24.4-33.8 31-54.7 1.9-6 3.9-14.9-.9-22.7-4.8
-                -7.8-13.6-10.1-19.8-11.2-3-.5-5.9-.6-8.6-.6l-77.8-.1c-13.5-.2-22.8 6.2-27.9 19-4.1 10.2-8.9 22.1-14.4 33.3-10.7 21.7-24.2 46.7-43.8 67.5l-.9.9c-1.3
-                 1.4-3.5 3.8-4.6 4.3-2.1-1.3-4.6-9-4.5-13v-.3l-.1-89.9c0-.5 0-.9-.1-1.4-1.7-12.8-5.1-25.7-25.4-29.7-.7-.1-1.3-.2-2-.2h-80.9c-15.2 0-23.3 7-29.7
-                  14.5-1.9 2.2-6.8 8.1-4.3 15.2 2.6 7.2 10.2 8.7 12.7 9.2 8.8 1.7 13.4 6.7 14.8 16.2 2.8 18.5 3.1 38.3 1.1 62.3-.6 6.4-1.6 11.3-3.4 15.4-.5 1.1-.9
-                   1.8-1.2 2.2-.5-.2-1.2-.5-2.2-1.2-6.2-4.2-10.9-10.8-15.4-17.2-18-25.5-33.2-53.6-46.4-86-5.4-13.3-15.6-20.7-28.7-20.9-24.9-.4-48-.4-70.5 0-10.6.2-18
-                   3.5-22.1 9.9s-3.9 14.6.4 24.3c31.2 69.4 59.5 119.8 91.8 163.6 22.8 30.8 45.7 52.2 72.1 67.4 27.8 15.9 59.1 23.7 95.4 23.7 4.1 0 8.3-.1 12.6-.3 22.4-1
-                   31.5-9.9 32.5-31.8.6-11.5 1.8-20.9 6.3-29 1.2-2.3 2.7-3.8 3.8-4.1 1.2-.3 3.3.4 5.6 1.9 4.2 2.8 7.9 6.5 10.9 9.8s6.1 6.8 9.1 10.1c6.3 7.1 12.9 14.4 19.8
-                   21.4 15.5 15.8 33.5 23.1 53.3 21.6h71.9c8.2-.5 15.3-5.1 19.5-12.5 5-8.9 4.9-20.2-.2-30.1-5.3-10.1-12.3-19-18.5-26.4zm1 46.8c-1 1.7-2.2 2.1-2.8 2.1h-72c-14
-                   1.2-25.9-3.8-37.5-15.5-6.5-6.7-12.9-13.8-19.1-20.7-3-3.4-6.1-6.9-9.3-10.3-3.9-4.2-8.7-9.1-14.9-13.1-9.2-6-16.9-5.8-21.7-4.6-4.7 1.2-11.5 4.6-16.7 14-6.7
-                   12.2-8.2 25.4-8.8 37.9-.3 7.6-1.6 9.6-2.2 10.1-.7.7-3.1 1.8-10.9 2.2-37.8 1.8-69.5-5-96.9-20.7-23.9-13.7-44.8-33.3-65.8-61.8-31.4-42.5-59-91.8-89.6-159.8
-                   -1.1-2.5-1.5-4-1.5-4.8.8-.3 2.3-.6 5-.6 22.2-.4 45.1-.4 69.8 0 3.4.1 7.2 1.1 10.1 8.2 13.8 33.9 29.7 63.3 48.6 90.1 5 7.1 11.3 15.9 20.5 22.2 8.4 5.8 15.3
-                   5.5 19.5 4.3 4.3-1.2 10.2-4.7 14.2-14.1 2.6-6.1 4.1-12.9 4.9-21.6 2.2-25.7 1.8-47-1.2-67.1-2.1-14.4-9.6-24.8-21.3-30.1 2.1-1.1 4.4-1.5 7.7-1.5h79.9c4.5 1
-                    5.4 2.2 5.7 2.6 1.3 1.7 2 5.8 2.5 9l.1 89.1c-.2 8.5 4 27.5 18.1 32.7.1 0 .2.1.4.1 12.9 4.2 21.4-4.9 25.9-9.8l.8-.9c21.5-22.8 36-49.5 47.3-72.5 5.9-11.9
-                    10.9-24.2 15.1-34.8 2.1-5.3 4-6.2 8.6-6.1h.2l77.9.1c1.8 0 3.7 0 5.2.3 3.7.6 5.2 1.4 5.7 1.7.1.6 0 2.3-1.1 5.8-5.7 17.8-16.6 32.9-28.1 48.9l-1.4 1.9c-6
-                    8.3-12.4 16.7-18.5 24.8-7.1 9.3-14.4 19-21.3 28.7-14.8 20.7-13.5 34.4 5 52.4 4.4 4.3 8.8 8.5 13.2 12.6 12.3 11.6 23.9 22.6 34.2 35 5.4 6.5 11.6 14.4 16
-                    23 2.3 4.4 1.7 8.5.5 10.6z" />
+            <a href="https://vk.com/" class="main-footer__social-item social-icon">
+              <svg class="social-icon__img social-icon__img--vk" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#vk-icon" x="0" y="0" />
               </svg>
               <span class="visually-hidden">vkontakte</span>
             </a>
@@ -623,5 +677,6 @@
     </div>
   </footer>
 </body>
+<script src="js/navigation-toggle-button.js"></script>
 
 </html>

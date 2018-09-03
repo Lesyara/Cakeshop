@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.filling__choice-wrapper {
+  position: relative;
+}
+
 .filling__choice-list {
   list-style: none;
   margin: 0;
@@ -15,19 +19,48 @@
 .filling__preview {
   position: relative;
   max-width: 244px;
-  //margin: 0 auto;
+  margin: 0 auto;
   padding-top: 17px;
   font-size: 0;
 }
 
 .filling__choice-indicator {
+  position: absolute;
+  top: 130px;
+  width: 100%;
   text-align: center;
-  margin-bottom: 13px;
-  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 0;
+}
+
+input[name="filling-indicator"] + label {
+  padding-right: 3px;
+}
+
+input[name="filling-indicator"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: @border-color;
+  cursor: pointer;
+}
+
+input[name="filling-indicator"]:checked + label::before {
+  background-color: @accent-color;
+}
+
+
+.filling__choice-indicator input[type="radio"] {
+  display: none;
 }
 
 .filling__info {
   margin-bottom: 22px;
+  margin-top: 37px;
 }
 
 .filling__item-title {
@@ -84,11 +117,15 @@
 
   .filling__choice-wrapper {
     display: flex;
-    max-width: 380px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: -34px auto 0;
+    margin-top: -34px;
+  }
+
+  .filling__choice-list {
+    width: 380px;
+    margin: 0 auto;
   }
 
   .filling__title {
@@ -105,7 +142,6 @@
     align-content: flex-start;
     margin: 0 auto;
   }
-
 
   .filling__item-title {
     font-size: 18px;
@@ -127,6 +163,7 @@
   }
 
   .filling__info {
+    margin-top: 0;
     margin-bottom: 17px;
     flex-basis: 130px;
     width: 200px;
@@ -167,13 +204,13 @@
   }
 
   .filling__prev {
-    top: 152px;
-    left: 90px;
+    top: 73px;
+    left: 50px;
   }
 
   .filling__next {
-    top: 152px;
-    right: 50px;
+    top: 73px;
+    right: 4px;
   }
 }
 
@@ -183,8 +220,11 @@
   }
 
   .filling__choice-wrapper {
-    max-width: 630px;
-    margin: -134px auto 0;
+    margin-top: -134px;
+  }
+
+  .filling__choice-list {
+    width: 630px;
   }
 
   .filling__title {
@@ -236,12 +276,12 @@
   }
 
   .filling__prev {
-    top: 260px;
-    left: 184px;
+    top: 219px;
+    left: 104px;
   }
 
   .filling__next {
-    top: 260px;
-    right: 114px;
+    top: 219px;
+    right: 30px;
   }
 }

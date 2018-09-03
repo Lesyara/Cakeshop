@@ -57,6 +57,10 @@
   background-repeat: no-repeat;
 }
 
+.main-header__navigation-toggle-button--opened {
+  background-image: url("../img/icon-menu-close.svg");
+}
+
 .main-header .cite-navigation__item {
   display: block;
   padding: 14px;
@@ -65,6 +69,12 @@
   text-align: center;
   background-color: @menu-popup-color;
 }
+
+.main-header .cite-navigation__item:hover,
+.main-header .cite-navigation__item:active {
+  color: @accent-color;
+}
+
 
 .main-header .cite-navigation__list:last-of-type(.cite-navigation__item) {
   border-bottom: none;

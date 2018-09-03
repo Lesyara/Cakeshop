@@ -13,6 +13,11 @@
   background-color: @accent-color;
 }
 
+.user-action__button:hover,
+.user-action__button:active {
+  box-shadow: 0 4px 10px 3px @accent-shadow-color;
+}
+
 .user-action__prev-link {
   display: block;
   position: relative;
@@ -67,13 +72,5 @@
   .user-action__next-link {
     background-color: transparent;
     box-shadow: none;
-  }
-
-  .user-action__prev-link {
-    //left: -17px;
-  }
-
-  .user-action__next-link {
-    //left: 11px;
   }
 }

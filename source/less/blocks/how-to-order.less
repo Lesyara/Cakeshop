@@ -1,14 +1,14 @@
 .how-to-order {
   background: @offer-block-normal-color;
-  background-image: linear-gradient(to top, #d72631, #ea4145);
-}
-
-.how-to-order .content-wrapper {
-  color: @secondary-font-color;
+  //background-image: linear-gradient(to top, #d72631, #ea4145);
   background-image: url("../img/how-to-order-back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center 310px;
   background-size: auto 232px;
+}
+
+.how-to-order .content-wrapper {
+  color: @secondary-font-color;
 }
 
 .how-to-order__title {
@@ -25,17 +25,19 @@
 }
 
 @media (min-width: @tablet-shift-width) {
+  .how-to-order {
+    background-image: url("../img/how-to-order-back-tablet.jpg");
+    background-position: -280px -7px;
+    background-size: 1026px auto;
+  }
+
   .how-to-order .content-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     padding-left: 193px;
-    background-image: url("../img/how-to-order-back-tablet.jpg");
-    background-position: -303px -7px;
-    background-size: 1026px auto;
   }
-
 
   .how-to-order__title {
     display: inline-block;
@@ -53,13 +55,16 @@
 }
 
 @media (min-width: @desktop-shift-width) {
+  .how-to-order {
+    background-image: url("../img/how-to-order-back-desktop.jpg");
+    background-size: auto 885px;
+    background-position: center -45px;
+  }
+
   .how-to-order .content-wrapper {
     max-width: 1366px;
     align-items: flex-start;
-    padding-left: 820px;
-    background-image: url("../img/how-to-order-back-desktop.jpg");//linear-gradient(to left, @offer-block-normal-color, @offer-block-normal-color 30%, @offer-block-dark-color);
-    background-size: auto 885px;
-    background-position: -220px -45px;
+    padding-left: 830px;
   }
 
   .how-to-order__title {

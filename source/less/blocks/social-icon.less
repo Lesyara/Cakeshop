@@ -1,3 +1,8 @@
+.social-icon__img use {
+  fill: @sub-light-font-color;
+  stroke: @sub-light-font-color;
+}
+
 .social-icon__img--instagram {
   height: 23px;
   width: 23px;
@@ -5,14 +10,24 @@
 
 .social-icon__img--vk {
   width: 31px;
+  height: 31px;
 }
 
-.social-icon__path {
-  fill: @sub-light-font-color;
+.social-icon:hover .social-icon__img use,
+.social-icon:active .social-icon__img use {
+  fill: @secondary-font-color;
+  stroke: @secondary-font-color;
 }
 
 @media (min-width: @desktop-shift-width) {
-  .social-icon__path {
+  .social-icon__img use {
     fill: @sub-dark-font-color;
+    stroke: @sub-dark-font-color;
+  }
+
+  .social-icon:hover .social-icon__img use,
+  .social-icon:active .social-icon__img use {
+    fill: @main-font-color;
+    stroke: @main-font-color;
   }
 }
