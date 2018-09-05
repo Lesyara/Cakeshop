@@ -26,6 +26,7 @@
   margin: 0 auto 10px;
   height: 120px;
   background-color: @section-color;
+  overflow: hidden;
 
   &--for-children {
     background-color: @children-section-color;
@@ -45,6 +46,11 @@
 .cakes__item-picture {
   opacity: 1;
   width: 100%;
+}
+
+.cakes__item--for-children .cakes__item-image {
+  margin-left: 54px;
+  margin-top: -38px;
 }
 
 .cakes__item:hover .cakes__item-picture,
@@ -83,6 +89,10 @@
     margin-bottom: 20px;
   }
 
+  .cakes__item--for-children .cakes__item-image {
+    margin: 0;
+  }
+
   .cakes__item {
     flex-basis: 420px;
     height: auto;
@@ -92,11 +102,13 @@
     &--classic {
       flex-grow: 1;
       margin-right: 20px;
+      min-height: 388px;
     }
 
     &--for-children {
       flex-grow: 1;
       margin-left: 20px;
+      min-height: 388px;
     }
   }
 
