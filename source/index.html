@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>Cakes</title>
   <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -210,7 +210,7 @@
           <div class="order__subtitle">Соберите торт в 3 шага</div>
           <section class="order__step filling">
             <h3 class="order__step-title filling__title">
-              <div class="order__step-number">01</div> Выберите начинку
+              <span class="order__step-number">01</span>Выберите начинку
             </h3>
             <div class="filling__choice-wrapper">
               <a class="filling__prev user-action__prev-link">
@@ -269,7 +269,7 @@
           </section>
           <section class="order__step size">
             <h3 class="order__step-title size__title">
-              <div class="order__step-number">02</div>Размер
+              <span class="order__step-number">02</span>Размер
             </h3>
             <div class="size__choice-wrapper">
               <ul class="size__list">
@@ -325,7 +325,7 @@
           <div class="order__step order__final-wrapper">
             <section class="decoration">
               <h3 class="order__step-title decoration__title">
-                <div class="order__step-number">03</div>Оформление
+                <span class="order__step-number">03</span>Оформление
               </h3>
               <div class="decoration__choice-wrapper">
                 <a class="decoration__prev user-action__prev-link">
@@ -382,21 +382,21 @@
               <div class="order__submit-wrapper">
                 <label class="order__submit-item order__submit-item--filling">
                   <span class="order__submit-label">Начинка</span>
-                  <div class="order__submit-input-wrapper">
+                  <span class="order__submit-input-wrapper">
                     <input class="order__submit-input" type="text" name="filling" placeholder="Шоколадный ганаш">
-                  </div>
+                  </span>
                 </label>
                 <label class="order__submit-item order__submit-item--size">
                   <span class="order__submit-label">Размер</span>
-                  <div class="order__submit-input-wrapper">
+                  <span class="order__submit-input-wrapper">
                     <input class="order__submit-input" type="text" name="size" placeholder="1 кг">
-                  </div>
+                  </span>
                 </label>
                 <label class="order__submit-item order__submit-item--decor">
                   <span class="order__submit-label">Оформление</span>
-                  <div class="order__submit-input-wrapper">
+                  <span class="order__submit-input-wrapper">
                     <input class="order__submit-input" type="text" name="decoration" placeholder="Маршмэллоу">
-                  </div>
+                  </span>
                 </label>
                 <button class="order__submit-button user-action__button" type="submit">Заказать торт</button>
               </div>
@@ -412,7 +412,7 @@
           <a class="feedback__prev user-action__prev-link">
             <span>Предыдущий</span>
           </a>
-          <div class="feedback__item">
+          <article class="feedback__item">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/feedback-photo-desktop.webp">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/content/feedback-photo-tablet.webp">
@@ -422,16 +422,16 @@
               <source media="(min-width: 768px)" srcset="img/content/feedback-photo-tablet.png">
               <img class="feedback__author-photo" src="img/content/feedback-photo-mobile.png" alt="Автор отзыва">
             </picture>
-            <cite>
-              <div class="feedback__author-name">Мария</div>
-              <div class="feedback__author-info">юрист, 33 года</div>
-            </cite>
+            <h3 class="feedback__item-header">
+              <span class="feedback__author-name">Мария</span>
+              <span class="feedback__author-info">юрист, 33 года</span>
+            </h3>
             <blockquote class="feedback__text">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо
               за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
               <a class="feedback__show-more">Развернуть</a>
             </blockquote>
             <span class="feedback__count">1/26</span>
-          </div>
+          </article>
           <div class="feedback__show-indicator">
             <input type="radio" id="feedback-indicator-one" name="feedback-indicator" disabled checked>
             <label for="feedback-indicator-one">Первый</label>
@@ -462,7 +462,7 @@
 
               <source media="(min-width: 1290px)" srcset="img/content/confectioner-photo-desktop.png">
               <source media="(min-width: 768px)" srcset="img/content/confectioner-photo-tablet.png">
-              <img class="confectioner__photo" src="img/content/confectioner-photo-mobile.png">
+              <img class="confectioner__photo" src="img/content/confectioner-photo-mobile.png" alt="Фото кондитера">
             </picture>
             <ul class="confectioner__social">
               <li class="confectioner__social-item confectioner__social-inst">
@@ -527,7 +527,7 @@
                 Свежий торт в день торжества
               </div>
               <p class="advantages__item-text">
-                Торты изготавливаются в течение суток до отправки
+                Торты изготавливаются в течение суток до отправки
               </p>
             </li>
           </ul>
@@ -676,7 +676,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/navigation-toggle-button.js"></script>
 </body>
-<script src="js/navigation-toggle-button.js"></script>
-
 </html>
