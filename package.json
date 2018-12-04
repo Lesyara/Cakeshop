@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "ajv": "^6.5.3",
+    "ajv": "^6.6.1",
     "ajv-keywords": "^3.2.0",
     "autoprefixer": "^8.6.5",
-    "browser-sync": "^2.26.0",
-    "eslint": "^5.5.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "eslint": "^5.9.0",
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-less": "^4.0.1",
-    "gulp-plumber": "1.2.x",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "7.0.x",
     "gulp-rename": "^1.4.0",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "^9.5.0",
+    "stylelint": "^9.9.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -51,7 +51,9 @@
   "dependencies": {
     "gulp-posthtml": "^3.0.4",
     "gulp-svgstore": "^7.0.0",
-    "gulp-uglify-es": "^1.0.4"
+    "gulp-uglify-es": "^1.0.4",
+    "lintspaces": "^0.6.2",
+    "merge": "^1.2.1"
   },
   "repository": {
     "type": "git",
